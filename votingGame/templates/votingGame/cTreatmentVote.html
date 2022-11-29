@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Please answer the following questions" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        In your group, the decision about how to spent the 10 Zloty per student is made in majority voting.
+        The option that receives the absolute majority of votes is chosen and the 10 Zloty of every
+        group member is spent on this option. If no absolute majority is reached in the first voting round,
+        there will be a second round of voting. <br>
+        Note that the decision now has real-life consequences. <br>
+        The decision reached in your group will be executed. <br>
+        <br> Now please cast your vote: <br>
+        What should the 10 Zloty per member of your group be spent on?
+
+    {% endblocktrans %}
+    {% formfields %}
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

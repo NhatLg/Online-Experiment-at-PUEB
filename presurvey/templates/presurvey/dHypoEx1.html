@@ -1,0 +1,34 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        Assume that the university provided every student at Poznan University of Economics and Business with 15 Zloty.
+        This money is earmarked for improving study conditions at this university.
+        It can be spent on the following options:<br>
+    <br>
+    (I)     A series of presentation by famous entrepreneurs, among them Marek Zmysłowski (firm(s), +1-2 facts).<br>
+    (II)    Access to a collection of standard textbooks in English language (ebooks) for every student.<br>
+    (III)   Scholarships for study abroad (or internship abroad) outside of funded programs (i.e. free mover).<br>
+    (IV)	Installation/Support of a study circle [Here, we need to be more precise].<br>
+
+    <br>How should this money be distributed (in percentage?)<br>
+
+    <br>Please note that your answer is purely hypothetical. It does not have any real-life consequences. <br>
+
+    <br>Please make sure that all of the options below add up to 100.
+    You only need to fill in the number with out the percentage sign "%".
+    {% endblocktrans %}
+    <br>
+
+    {% formfields %}
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

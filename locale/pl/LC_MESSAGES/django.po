@@ -1,0 +1,451 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-24 10:59+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: .\presurvey\models.py:51
+msgid "Interested"
+msgstr ""
+
+#: .\presurvey\models.py:52
+msgid "Distressed"
+msgstr ""
+
+#: .\presurvey\models.py:53
+msgid "Excited"
+msgstr ""
+
+#: .\presurvey\models.py:54
+msgid "Upset"
+msgstr ""
+
+#: .\presurvey\models.py:55
+msgid "Strong"
+msgstr ""
+
+#: .\presurvey\models.py:56
+msgid "Guilty"
+msgstr ""
+
+#: .\presurvey\models.py:57
+msgid "Scared"
+msgstr ""
+
+#: .\presurvey\models.py:58
+msgid "Hostile"
+msgstr ""
+
+#: .\presurvey\models.py:59
+msgid "Enthusiastic"
+msgstr ""
+
+#: .\presurvey\models.py:60
+msgid "Proud"
+msgstr ""
+
+#: .\presurvey\models.py:61
+msgid "Irritable"
+msgstr ""
+
+#: .\presurvey\models.py:62
+msgid "Alert"
+msgstr ""
+
+#: .\presurvey\models.py:63
+msgid "Ashamed"
+msgstr ""
+
+#: .\presurvey\models.py:64
+msgid "Inspired"
+msgstr ""
+
+#: .\presurvey\models.py:65
+msgid "Nervous"
+msgstr ""
+
+#: .\presurvey\models.py:66
+msgid "Determined"
+msgstr ""
+
+#: .\presurvey\models.py:67
+msgid "Attentive"
+msgstr ""
+
+#: .\presurvey\models.py:68
+msgid "Jittery"
+msgstr ""
+
+#: .\presurvey\models.py:69
+msgid "Active"
+msgstr ""
+
+#: .\presurvey\models.py:70
+msgid "Afraid"
+msgstr ""
+
+#: .\presurvey\models.py:77
+msgid "What phase of study are you currently in?"
+msgstr ""
+
+#: .\presurvey\models.py:79
+msgid "Bachelor"
+msgstr ""
+
+#: .\presurvey\models.py:80
+msgid "Master"
+msgstr ""
+
+#: .\presurvey\models.py:81
+msgid "PhD"
+msgstr ""
+
+#: .\presurvey\models.py:82
+msgid "Others"
+msgstr ""
+
+#: .\presurvey\models.py:84
+msgid "What is your study program"
+msgstr ""
+
+#: .\presurvey\models.py:85
+msgid "Did you vote in the last election for the student council?"
+msgstr ""
+
+#: .\presurvey\models.py:87 .\presurvey\models.py:100
+msgid "Yes"
+msgstr ""
+
+#: .\presurvey\models.py:88 .\presurvey\models.py:101
+msgid "No"
+msgstr ""
+
+#: .\presurvey\models.py:90
+msgid "What is your gender?"
+msgstr ""
+
+#: .\presurvey\models.py:92
+msgid "Male"
+msgstr ""
+
+#: .\presurvey\models.py:93
+msgid "Female"
+msgstr ""
+
+#: .\presurvey\models.py:94
+msgid "Diverse"
+msgstr ""
+
+#: .\presurvey\models.py:96
+msgid "What is your age?"
+msgstr ""
+
+#: .\presurvey\models.py:97
+msgid "What is your mother tongue?"
+msgstr ""
+
+#: .\presurvey\models.py:98
+msgid "Do you work to fund your study?"
+msgstr ""
+
+#: .\presurvey\models.py:106
+msgid "Other people"
+msgstr ""
+
+#: .\presurvey\models.py:108
+msgid "University council"
+msgstr ""
+
+#: .\presurvey\models.py:110
+msgid "Student council"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\aWelcome.html:6
+msgid "Welcome"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\aWelcome.html:10
+msgid ""
+"\n"
+"        Today, we invite you to take part in an economic experiment. The "
+"experiment is part of a research\n"
+"        project of doctoral students at the Poznan University of Economics "
+"and Business. In total,\n"
+"        approximately 500-600 students will participate. All sessions will "
+"take place in December 2022.<br>\n"
+"\n"
+"        <br>By participating in this experiment, you support their research."
+"<br>\n"
+"\n"
+"        The experiment will take about 20 minutes.<br>\n"
+"        Every participant who takes part and answers all questions receives "
+"a show-up fee of 5 Zloty.\n"
+"        In addition, there is the chance to earn another 5 Zloty during the "
+"experiment.<br>\n"
+"        The outcome of the experiment has an impact on the study conditions "
+"at the Poznan University of\n"
+"        Economics and Business.<br>\n"
+"\n"
+"        <br><strong>Please do not talk to your fellow students during the "
+"experiment.</strong>\n"
+"\n"
+"    "
+msgstr ""
+
+#: .\presurvey\templates\presurvey\bIdRequest.html:6
+msgid "Identify Yourself"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\bIdRequest.html:10
+msgid ""
+"\n"
+"        Please enter the Identification number on the card we just gave you. "
+"This is your unique identifier.\n"
+"    "
+msgstr ""
+
+#: .\presurvey\templates\presurvey\bIdRequest.html:17
+msgid ""
+"\n"
+"        Please keep the card. You need it to collect the payoff of the "
+"experiment.<br>\n"
+"        We use this card rather to guarantee anonymity. We will not ask for "
+"your name or any other\n"
+"        information that enables us to connect your behavior in this "
+"experiment to your true identity.\n"
+"    "
+msgstr ""
+
+#: .\presurvey\templates\presurvey\cPanas.html:13
+msgid "Very slightly or not at all"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\cPanas.html:14
+msgid "A little"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\cPanas.html:15
+msgid "Moderately"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\cPanas.html:16
+msgid "Quite a bit"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\cPanas.html:17
+msgid "Extremely "
+msgstr ""
+
+#: .\presurvey\templates\presurvey\dHypoEx1.html:10
+msgid ""
+"\n"
+"        Assume that the university provided every student at Poznan "
+"University of Economics and Business with 15 Zloty.\n"
+"        This money is earmarked for improving study conditions at this "
+"university.\n"
+"        It can be spent on the following options:<br>\n"
+"    <br>\n"
+"    (I)     A series of presentation by famous entrepreneurs, among them "
+"Marek Zmysłowski (firm(s), +1-2 facts).<br>\n"
+"    (II)    Access to a collection of standard textbooks in English language "
+"(ebooks) for every student.<br>\n"
+"    (III)   Scholarships for study abroad (or internship abroad) outside of "
+"funded programs (i.e. free mover).<br>\n"
+"    (IV)\tInstallation/Support of a study circle [Here, we need to be more "
+"precise].<br>\n"
+"\n"
+"    <br>How should this money be distributed?<br>\n"
+"\n"
+"    <br>Please note that your answer is purely hypothetical. It does not "
+"have any real-life consequences. <br>\n"
+"\n"
+"    "
+msgstr ""
+
+#: .\presurvey\templates\presurvey\ePersonalData.html:6
+#: .\presurvey\templates\presurvey\fAttitudes.html:6
+#: .\votingGame\templates\votingGame\cTreatmentVote.html:6
+#: .\votingGame\templates\votingGame\cTreatmentVote2.html:6
+msgid "Please answer the following questions"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:10
+msgid ""
+"\n"
+"        The philosopher Immanuel Kant (1724-1804) proposed the well-known "
+"Categorical Imperative: An\n"
+"        individual shall “[…] act only on that maxim through which you can "
+"at the same time will that it\n"
+"        should become a universal law.” (Kant, 1907: 88).<br>\n"
+"\n"
+"        <br><b>What do you think. To what degree should people follow this "
+"guideline when making decisions in their\n"
+"    everyday life?</b>\n"
+"    "
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:21
+#: .\presurvey\templates\presurvey\fAttitudes.html:48
+msgid "Not at all"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:30
+#: .\presurvey\templates\presurvey\fAttitudes.html:51
+msgid "Absolutely"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:41
+msgid ""
+"\n"
+"        <b>How much do you trust in:</b>\n"
+"    "
+msgstr ""
+
+#: .\votingGame\models.py:26
+msgid "A presentation the famous entrepreneur Marek Zmysłowski"
+msgstr "Polish A presentation the famous entrepreneur Marek Zmysłowski"
+
+#: .\votingGame\models.py:27
+msgid ""
+"Access to a collection of standard textbooks in English language (ebooks) "
+"for every student"
+msgstr ""
+
+#: .\votingGame\models.py:28
+msgid ""
+"Scholarships for study abroad (or internship abroad) outside of funded "
+"programs (i.e. free mover)"
+msgstr ""
+
+#: .\votingGame\models.py:29
+msgid "Installation/Support of a study circle"
+msgstr ""
+
+#: .\votingGame\pages.py:19 .\votingGame\pages.py:31 .\votingGame\pages.py:55
+msgid "Waiting for other players"
+msgstr ""
+
+#: .\votingGame\pages.py:20
+msgid "waiting for other players to get ready before splitting into groups..."
+msgstr ""
+
+#: .\votingGame\pages.py:32 .\votingGame\pages.py:56
+msgid "waiting for other players and calculate voting result..."
+msgstr ""
+
+#: .\votingGame\templates\votingGame\aIntro.html:6
+msgid "Introduction"
+msgstr ""
+
+#: .\votingGame\templates\votingGame\aIntro.html:10
+msgid ""
+"\n"
+"        For every participant of today’s experiment, there are 10 Zloty from "
+"public sources.\n"
+"        This money is earmarked for improving study conditions at the Poznan "
+"University of Economics and Business. It can be spent on the following "
+"options:\n"
+"        <ul>\n"
+"            <li> A presentation the famous entrepreneur Marek Zmysłowski "
+"(firm(s), +1-2 facts) </li>\n"
+"            <li> Access to a collection of standard textbooks in English "
+"language (ebooks) for every student </li>\n"
+"            <li> Scholarships for study abroad (or internship abroad) "
+"outside of funded programs (i.e. free mover). </li>\n"
+"            <li> Installation/Support of a study circle [Here, we need to be "
+"more precise]. </li>\n"
+"        </ul>\n"
+"        The question is: What should the 10 Zloty per student be spent on?\n"
+"    "
+msgstr ""
+
+#: .\votingGame\templates\votingGame\cTreatmentVote.html:10
+msgid ""
+"\n"
+"        In your group, the decision about how to spent the 10 Zloty per "
+"student is made in majority voting.\n"
+"        The option that receives the absolute majority of votes is chosen "
+"and the 10 Zloty of every\n"
+"        group member is spent on this option. If no absolute majority is "
+"reached in the first voting round,\n"
+"        there will be a second round of voting. <br>\n"
+"        Note that the decision now has real-life consequences. <br>\n"
+"        The decision reached in your group will be executed. <br>\n"
+"        <br> Now please cast your vote: <br>\n"
+"        What should the 10 Zloty per member of your group be spent on?\n"
+"\n"
+"    "
+msgstr ""
+
+#: .\votingGame\templates\votingGame\cVoteResult.html:6
+#: .\votingGame\templates\votingGame\cVoteResult2.html:6
+msgid "Vote Result"
+msgstr ""
+
+#: .\votingGame\templates\votingGame\cVoteResult.html:12
+#: .\votingGame\templates\votingGame\cVoteResult2.html:12
+msgid ""
+"\n"
+"                Your group reached the following decision by majority voting."
+"<br>\n"
+"\n"
+"                The 10 Zloty of every group member is spent on the option:\n"
+"            "
+msgstr ""
+
+#: .\votingGame\templates\votingGame\cVoteResult.html:19
+#: .\votingGame\templates\votingGame\cVoteResult2.html:19
+msgid " There is a tie, therefore, we will be voting again. "
+msgstr ""
+
+#: .\votingGame\templates\votingGame\dTreatmentCouncil.html:6
+msgid "Council"
+msgstr ""
+
+#: .\votingGame\templates\votingGame\dTreatmentCouncil.html:10
+msgid ""
+"\n"
+"\n"
+"        For the 10 Zloty assigned to your group, we asked the student "
+"council at the Poznan University of Economics\n"
+"        to make the decision majority voting. <br>\n"
+"        <br>The student council decided as follows<br>\n"
+"        The 10 Zloty of every group member is spent on the option "
+"______________\n"
+"\n"
+"\n"
+"    "
+msgstr ""
+
+#: .\votingGame\templates\votingGame\dTreatmentPresident.html:6
+msgid "President"
+msgstr ""
+
+#: .\votingGame\templates\votingGame\dTreatmentPresident.html:10
+msgid ""
+"\n"
+"        For the 10 Zloty assigned to your group, we asked the vice-president "
+"of the student council at the\n"
+"        Poznan University of Economics to make the decision.<br>\n"
+"        <br>Vice-President Name Surname decided as follows:<br>\n"
+"        The 10 Zloty of every group member is spent on the option "
+"______________<br>\n"
+"\n"
+"    "
+msgstr ""

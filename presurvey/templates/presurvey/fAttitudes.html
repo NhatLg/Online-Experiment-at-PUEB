@@ -1,0 +1,75 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Please answer the following questions" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        The philosopher Immanuel Kant (1724-1804) proposed the well-known Categorical Imperative: An
+        individual shall “[…] act only on that maxim through which you can at the same time will that it
+        should become a universal law.” (Kant, 1907: 88).<br>
+
+        <br><b>What do you think. To what degree should people follow this guideline when making decisions in their
+    everyday life?</b>
+    {% endblocktrans %}
+
+        <table class="table">
+            <tr>
+                <th width="5%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Not at all{% endblocktrans %}</th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Absolutely{% endblocktrans %}</th>
+            </tr>
+            <tr>
+                {% for choice in form.subjectAttiKant %}
+                    <td style="text-align: center;">{{ choice }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+
+    <br>
+
+    {% blocktrans %}
+        <b>How much do you trust in:</b>
+    {% endblocktrans %}
+
+        <table class="table">
+            <tr>
+                <th width="15%" style="padding-right: 50px;"> </th>
+                <th width="5%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Not at all{% endblocktrans %}</th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Absolutely{% endblocktrans %}</th>
+            </tr>
+            <tr>
+                <td>{{ form.subjectAttiTrustOther.label }}</td>
+                {% for choice in form.subjectAttiTrustOther %}
+                    <td style="text-align: center;">{{ choice }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.subjectAttiTrustAdmin.label }}</td>
+                {% for choice in form.subjectAttiTrustAdmin %}
+                    <td style="text-align: center;">{{ choice }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>{{ form.subjectAttiTrustCouncil.label }}</td>
+                {% for choice in form.subjectAttiTrustCouncil %}
+                    <td style="text-align: center;">{{ choice }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+
+    {% next_button %}
+
+{% endblock %}

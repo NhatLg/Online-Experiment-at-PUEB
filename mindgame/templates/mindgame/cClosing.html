@@ -1,0 +1,21 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+ {% trans "CLOSING" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        <p>
+            Thank you for participating in the experiment.<br>
+            Please keep your card. You will need it to collect your individual payment from the experiment.
+            You can collect the payment [when, where].
+            Just come by, bring the card sign a receipt that you received the money and receive the money in cash.
+        </p>
+    {% endblocktrans %}
+
+    {% next_button %}
+
+{% endblock %}

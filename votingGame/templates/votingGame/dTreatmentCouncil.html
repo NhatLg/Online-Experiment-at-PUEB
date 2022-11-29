@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Council" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+
+        For the 10 Zloty assigned to your group, we asked the student council at the Poznan University of Economics
+        to make the decision majority voting. <br>
+        <br>The student council decided as follows<br>
+        The 10 Zloty of every group member is spent on the option ______________
+
+
+    {% endblocktrans %}
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

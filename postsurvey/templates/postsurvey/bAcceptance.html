@@ -1,0 +1,40 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Please answer the following questions" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        What do you think about this decision? <br>
+        Please use the scale below to express your view. <br><br>
+
+    {% endblocktrans %}
+
+        <table class="table">
+            <tr>
+                <th width="5%" style="padding-left: 0px; text-align: center;">{% blocktrans %}The decision has been reached in a legitimate way and is thus acceptable{% endblocktrans %}</th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;"></th>
+                <th width="5%" style="padding-left: 0px; text-align: center;">{% blocktrans %}The decision is not acceptable{% endblocktrans %}</th>
+            </tr>
+            <tr>
+                {% for choice in form.subjectAcceptance %}
+                    <td style="text-align: center;">{{ choice }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

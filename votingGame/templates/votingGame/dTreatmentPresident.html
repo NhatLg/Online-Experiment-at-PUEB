@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "President" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        For the 10 Zloty assigned to your group, we asked the vice-president of the student council at the
+        Poznan University of Economics to make the decision.<br>
+        <br>Vice-President Name Surname decided as follows:<br>
+        The 10 Zloty of every group member is spent on the option ______________<br>
+
+    {% endblocktrans %}
+    {% formfields %}
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

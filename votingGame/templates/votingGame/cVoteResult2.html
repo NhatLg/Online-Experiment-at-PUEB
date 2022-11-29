@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Vote Result" %}
+{% endblock %}
+
+{% block content %}
+
+        {% if vote_final_result %}
+            {% blocktrans %}
+                Your group reached the following decision by majority voting.<br>
+
+                The 10 Zloty of every group member is spent on the option:
+            {% endblocktrans %}
+                <b>{{ vote_final_result_label }}</b>
+        {% else %}
+            {% blocktrans %} There is a tie, therefore, we will be voting again. {% endblocktrans %}
+        {% endif %}
+
+
+    <br><br>
+
+    {% next_button %}
+
+{% endblock %}

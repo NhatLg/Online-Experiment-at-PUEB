@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Identify Yourself" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        Please enter the Identification number on the card we just gave you. This is your unique identifier.
+    {% endblocktrans %}
+    <br>
+
+    {% formfields %}
+
+    {% blocktrans %}
+        Please keep the card. You need it to collect the payoff of the experiment.<br>
+        We use this card rather to guarantee anonymity. We will not ask for your name or any other
+        information that enables us to connect your behavior in this experiment to your true identity.
+    {% endblocktrans %}
+
+    {% next_button %}
+
+{% endblock %}

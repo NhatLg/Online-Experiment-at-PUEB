@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Introduction" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+        For every participant of today’s experiment, there are 10 Zloty from public sources.
+        This money is earmarked for improving study conditions at the Poznan University of Economics and Business. It can be spent on the following options:
+        <ul>
+            <li> A presentation the famous entrepreneur Marek Zmysłowski (firm(s), +1-2 facts) </li>
+            <li> Access to a collection of standard textbooks in English language (ebooks) for every student </li>
+            <li> Scholarships for study abroad (or internship abroad) outside of funded programs (i.e. free mover). </li>
+            <li> Installation/Support of a study circle [Here, we need to be more precise]. </li>
+        </ul>
+        The question is: What should the 10 Zloty per student be spent on?
+    {% endblocktrans %}
+
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

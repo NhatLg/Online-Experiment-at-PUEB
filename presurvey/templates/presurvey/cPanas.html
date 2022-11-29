@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+        <p><br></p>
+        <table class="table">
+            <tr>
+                <th width="40%" style="padding-right: 50px;"> </th>
+                <th width="12%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Very slightly or not at all{% endblocktrans %}</th>
+                <th width="12%" style="padding-left: 0px; text-align: center;">{% blocktrans %}A little{% endblocktrans %}</th>
+                <th width="12%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Moderately{% endblocktrans %}</th>
+                <th width="12%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Quite a bit{% endblocktrans %}</th>
+                <th width="12%" style="padding-left: 0px; text-align: center;">{% blocktrans %}Extremely {% endblocktrans %}</th>
+            </tr>
+            {% for field in form %}
+                <tr>
+                    <th>{{ field.label }}</th>
+                    {% for choice in field %}
+                        <td style="text-align: center;">{{ choice }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+
+
+
+    {% next_button %}
+
+{% endblock %}
