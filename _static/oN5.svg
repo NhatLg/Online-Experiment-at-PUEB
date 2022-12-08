@@ -1,0 +1,9 @@
+<svg width="170" height="170" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="83" rx="83" id="svg_1" cy="85" cx="85" stroke="#000" fill="#fff"/>
+  <path id="svg_2" d="m85,164c-43.64641,0 -79,-35.35359 -79,-79c0,-43.64641 35.35359,-79 79,-79c43.64641,0 79,35.35359 79,79c0,43.64641 -35.35359,79 -79,79z" opacity="undefined" stroke="#000" fill="#fff"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" stroke-width="0" id="svg_5" y="89" x="58" stroke="#000" fill="#000000">Ogon</text>
+ </g>
+</svg>

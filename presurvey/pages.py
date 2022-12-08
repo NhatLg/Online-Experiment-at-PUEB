@@ -19,26 +19,16 @@ class bIdRequest(TransMixin, Page):
 class cPanas(TransMixin, Page):
     form_model = 'player'
     form_fields = [
-        'panas_q1',
-        'panas_q2',
-        'panas_q3',
-        'panas_q4',
-        'panas_q5',
-        'panas_q6',
-        'panas_q7',
-        'panas_q8',
-        'panas_q9',
-        'panas_q10',
-        'panas_q11',
-        'panas_q12',
-        'panas_q13',
-        'panas_q14',
-        'panas_q15',
-        'panas_q16',
-        'panas_q17',
-        'panas_q18',
-        'panas_q19',
-        'panas_q20',
+        'panasDis',
+        'panasExc',
+        'panasUps',
+        'panasSca',
+        'panasEnt',
+        'panasAle',
+        'panasIns',
+        'panasNer',
+        'panasDet',
+        'panasAfr',
     ]
     
 class dHypoEx1(TransMixin, Page):
