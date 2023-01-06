@@ -30,6 +30,7 @@ class cTreatmentVote(TransMixin, Page):
     def before_next_page(self):
         if self.timeout_happened:
             self.player.treatment_vote = 99
+            self.player.isLetTimeout1 = True
 
 
 class cWaitPageTieCheck(TransMixin, WaitPage):
@@ -63,6 +64,7 @@ class cTreatmentVote2(TransMixin, Page):
     def before_next_page(self):
         if self.timeout_happened:
             self.player.treatment_vote2 = 99
+            self.player.isLetTimeout2 = True
 
 class cWaitPageTieCheck2(TransMixin, WaitPage):
     after_all_players_arrive = 'second_tie_check'

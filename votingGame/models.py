@@ -86,3 +86,5 @@ class Player(BasePlayer):
     isVoteTreatment = models.BooleanField()
     isCouncilTreatment = models.BooleanField()
     isPresidentTreatment = models.BooleanField()
+    isLetTimeOut1 = models.BooleanField(initial=False)
+    isLetTimeOut2 = models.BooleanField(initial=False)
