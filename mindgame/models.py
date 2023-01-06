@@ -46,15 +46,19 @@ class Group(BaseGroup):
 #     )
 
 class Player(BasePlayer):
+    subjectIsWorkingCoin = models.BooleanField(label=False, choices = [
+        (True, _("Yes")),
+        (False, _("No"))
+    ])
 
     subjectReport = models.IntegerField(label=False,
                                         choices=[
-                                            (0,_("0 correct predictions - Take 0 Zloty out of the funding, you earn extra 0 Zloty")),
-                                            (1,_("1 correct predictions - Take 1 Zloty out of the funding, you earn extra 1 Zloty")),
-                                            (2,_("2 correct predictions - Take 2 Zloty out of the funding, you earn extra 2 Zloty")),
-                                            (3,_("3 correct predictions - Take 3 Zloty out of the funding, you earn extra 3 Zloty")),
-                                            (4,_("4 correct predictions - Take 4 Zloty out of the funding, you earn extra 4 Zloty")),
-                                            (5,_("5 correct predictions - Take 5 Zloty out of the funding, you earn extra 5 Zloty"))
+                                            (0,_("0 correct predictions - your contribution is 15 Zloty, you earn extra 0 Zloty ( + your show-up fee)")),
+                                            (1,_("1 correct predictions - your contribution is 14 Zloty , you earn extra 1 Zloty (+ your show-up fee)")),
+                                            (2,_("2 correct predictions - your contribution is 13 Zloty , you earn extra 2 Zloty (+ your show-up fee)")),
+                                            (3,_("3 correct predictions - your contribution is 12 Zloty , you earn extra 3 Zloty (+ your show-up fee)")),
+                                            (4,_("4 correct predictions - your contribution is 11 Zloty , you earn extra 4 Zloty (+ your show-up fee)")),
+                                            (5,_("5 correct predictions - your contribution is 10 Zloty , you earn extra 5 Zloty (+ your show-up fee)")),
                                         ],
                                         widget=widgets.RadioSelect)
 

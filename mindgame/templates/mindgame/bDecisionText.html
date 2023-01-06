@@ -83,15 +83,9 @@
 {% endblock %}
 
 {% block content %}
+    {% trans "Since your device cannot display the coin, please use the text result below:" %}
     <div class="coin-container">
-        <div class="coin" id="coin">
-            <div class="heads">
-                <img src="{% static 'oNn.svg' %}" alt="uszkodzony obraz, skontaktuj się z eksperymentatorem">
-            </div>
-            <div class="tails">
-                <img src="{% static 'oN5.svg' %}" alt="uszkodzony obraz, skontaktuj się z eksperymentatorem">
-            </div>
-        </div>
+        <p class="coin_text"></p>
         <div class="buttons">
             <button id="flip-button" type="button">
                 {% trans "Flip Coin" %}
@@ -119,27 +113,22 @@
     <script>
         let heads = 0;
         let tails = 0;
-        let coin = document.querySelector(".coin");
+        let coinText = document.querySelector("p.coin_text");
         let flipBtn = document.querySelector("#flip-button");
         let clickNum = 0;
         let clickSeq = "";
-
+        
         flipBtn.addEventListener("click", () => {
             let i = Math.floor(Math.random() * 2);
-            coin.style.animation = "none";
             if(i){
-                setTimeout(function(){
-                    coin.style.animation = "spin-heads 3s forwards";
-                }, 100);
+                coinText.innerText = "głowa";
                 heads++;
                 clickNum++;
                 clickSeq = clickSeq.concat(clickNum,"1,");
                 document.getElementById('subjectClickSeq').value = clickSeq;
             }
             else{
-                setTimeout(function(){
-                    coin.style.animation = "spin-tails 3s forwards";
-                }, 100);
+                coinText.innerText = "ogon";
                 tails++;
                 clickNum++;
                 clickSeq = clickSeq.concat(clickNum,"0,");

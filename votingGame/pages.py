@@ -22,9 +22,15 @@ class bWaitPageShuffle(TransMixin, WaitPage):
 class cTreatmentVote(TransMixin, Page):
     form_model='player'
     form_fields=['treatment_vote']
+    timeout_seconds = 90
 
     def is_displayed(self):
         return self.player.isVoteTreatment
+
+    def before_next_page(self):
+        if self.timeout_happened:
+            self.player.treatment_vote = 99
+
 
 class cWaitPageTieCheck(TransMixin, WaitPage):
     after_all_players_arrive = 'first_tie_check'
@@ -43,12 +49,20 @@ class cVoteResult(TransMixin, Page):
     def is_displayed(self):
         return self.player.isVoteTreatment
 
+    def before_next_page(self):
+        self.participant.vars["vote_str_result"] =  Constants.voteOptions[self.group.voteResult1 - 1][1]
+
 class cTreatmentVote2(TransMixin, Page):
     form_model='player'
     form_fields=['treatment_vote2']
+    timeout_seconds = 90
     
     def is_displayed(self):
         return (self.player.isVoteTreatment) and (self.group.isTie)
+
+    def before_next_page(self):
+        if self.timeout_happened:
+            self.player.treatment_vote2 = 99
 
 class cWaitPageTieCheck2(TransMixin, WaitPage):
     after_all_players_arrive = 'second_tie_check'
@@ -69,16 +83,25 @@ class cVoteResult2(TransMixin, Page):
     def is_displayed(self):
         return (self.player.isVoteTreatment) and (self.group.isTie)
 
+    def before_next_page(self):
+        self.participant.vars["vote_str_result"] =  Constants.voteOptions[self.group.voteResult2 - 1][1]
+
 class dTreatmentPresident(TransMixin, Page):
 
     def is_displayed(self):
         return self.player.isPresidentTreatment
 
+    def before_next_page(self):
+        self.participant.vars["vote_str_result"] =  Constants.voteOptions[3 - 1][1]
+
 class dTreatmentCouncil(TransMixin, Page):
 
     def is_displayed(self):
         return self.player.isCouncilTreatment
-    
+
+    def before_next_page(self):
+        self.participant.vars["vote_str_result"] =  Constants.voteOptions[3 - 1][1]
+
 class Results(Page):
     pass
 

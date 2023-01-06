@@ -9,19 +9,18 @@
 {% block content %}
     {% blocktrans %}
         <p>
-            There is an additional 5 Zloty per student. This money is by default spent on the option decided a
-            few minutes ago:<br>
-            ((SHOW OPTION HERE AGAIN))<br>
-            However, you are given a chance to take this 5 Zloty and add it to your show-up fee.
-            The decision on how much money you can take is dependent on the upcoming coinflip task.<br>
+            A few minutes ago, you were informed that 10 -15 Zloty per member in your group will be spent on
+            the following option:<br><br>
+            <i>{{last_vote_result}}</i><br><br>
+            The exact amount of money spent this way depends on your performance in the upcoming coinflip task. <br>
 
-            <br>The task involves predicting coin flips. The results of this coin flip is corresponding with the amount of Zloty
-            you can take out of the fund mentioned previously.<br>
+            <br>The task involves predicting coin flips. The results of this coin flip determine the amount of Zloty
+            that you individually take out of the common pool funding the option above.<br>
 
-            <br>You will be asked to toss a virtual coin 5 times. By clicking on the coin in the screen,
+            <br>You will be asked to toss a virtual coin 5 times. By clicking on the button "Flip Coin" on the screen,
             the coin is toss.<br>
 
-            <br>Before EACH toss, predict which side of the coin will be face-up. Think of the prediction in your head only
+            <br>Before <b>EACH</b> toss, predict which side of the coin will be face-up. Think of the prediction in your head only
             and remember it. You can make just one of two possible predictions:<br>
             “I predict Heads will be face-up”<br>
             Or<br>
@@ -37,8 +36,8 @@
             Similarly, 3 correct predictions report 3; 2 correct predictions report 2; 1 correct prediction report 1.<br>
             If you do not correctly predict any of the 5 coin tosses, then report 0.<br>
 
-            <br>Only the first 5 coin tosses will be counted.<br>
-            The first toss starts the first time you click on the virtual coin (excluding screen transition).
+            <br><b>Only the first 5 coin tosses will be counted.</b><br>
+            The first toss starts the first time you click on the "Flip Coin" button (excluding screen transition).
         </p>
 
 

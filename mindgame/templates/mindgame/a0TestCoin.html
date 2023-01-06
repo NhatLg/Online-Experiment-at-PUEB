@@ -79,10 +79,15 @@
 {% endblock %}
 
 {% block title %}
-    {% trans "Please answer the following questions" %}
+    {% trans "Testing for your device" %}
 {% endblock %}
 
 {% block content %}
+    {% blocktrans %}
+        <p> Before we continue with the last part of the experiment, we would like to test if your device can see the coin
+            below and flip it by clicking the button "Flip Coin".
+        </p>
+    {% endblocktrans %}
     <div class="coin-container">
         <div class="coin" id="coin">
             <div class="heads">
@@ -98,17 +103,11 @@
             </button>
         </div>
     </div>
-    {% blocktrans %}
-        <p> <b>Please make a prediction in your head then complete your coin toss (by clicking the button "Flip Coin") now,
-            repeat this process 5 times in total.</b> <br><br>
-            Report your outcomes using the form below. Your performance in the coin-flip task determines
-            your individual payoff from the experiment and your contribution to the option: <br>
-            <i>{{last_vote_result}}</i>
-        </p>
-    {% endblocktrans %}
 
-    {% formfield player.subjectReport %}
-    <input type="hidden" name="subjectClickSeq" id="subjectClickSeq" value="Init"/>
+    {% blocktrans %}
+        <p> <b>Can you see the coin and flip it by clicking "Flip Coin"? </b></p>
+    {% endblocktrans %}
+    {% formfield player.subjectIsWorkingCoin %}
     {% next_button %}
 
 {% endblock %}
@@ -121,8 +120,6 @@
         let tails = 0;
         let coin = document.querySelector(".coin");
         let flipBtn = document.querySelector("#flip-button");
-        let clickNum = 0;
-        let clickSeq = "";
 
         flipBtn.addEventListener("click", () => {
             let i = Math.floor(Math.random() * 2);
@@ -132,18 +129,12 @@
                     coin.style.animation = "spin-heads 3s forwards";
                 }, 100);
                 heads++;
-                clickNum++;
-                clickSeq = clickSeq.concat(clickNum,"1,");
-                document.getElementById('subjectClickSeq').value = clickSeq;
             }
             else{
                 setTimeout(function(){
                     coin.style.animation = "spin-tails 3s forwards";
                 }, 100);
                 tails++;
-                clickNum++;
-                clickSeq = clickSeq.concat(clickNum,"0,");
-                document.getElementById('subjectClickSeq').value = clickSeq;
             }
             disableButton();
         });

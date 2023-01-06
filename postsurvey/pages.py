@@ -12,16 +12,16 @@ class TransMixin:
 class aPanas(TransMixin, Page):
     form_model = 'player'
     form_fields = [
-        'pPanasDis',
-        'pPanasExc',
-        'pPanasUps',
-        'pPanasSca',
-        'pPanasEnt',
-        'pPanasAle',
-        'pPanasIns',
-        'pPanasNer',
-        'pPanasDet',
-        'pPanasAfr',
+        "ppanasUps",
+        "ppanasHos",
+        "ppanasAle",
+        "ppanasAsh",
+        "ppanasIns",
+        "ppanasNer",
+        "ppanasDet",
+        "ppanasAtt",
+        "ppanasAfr",
+        "ppanasAct",
         # 'ppanas_q11',
         # 'ppanas_q12',
         # 'ppanas_q13',
@@ -44,4 +44,4 @@ class WaitPage(TransMixin, WaitPage):
 
 
 
-page_sequence = [aPanas, bAcceptance]
+page_sequence = [aPanas]

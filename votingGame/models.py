@@ -23,10 +23,11 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
     translated_languages = ('en', 'pl')
-    voteOptions = [  (0, _('A presentation the famous entrepreneur Marek Zmysłowski')),
-                     (1, _('Access to a collection of standard textbooks in English language (ebooks) for every student')),
-                     (2, _('Scholarships for study abroad (or internship abroad) outside of funded programs (i.e. free mover)')),
-                     (3, _('Installation/Support of a study circle')),
+    voteOptions = [  (0, _('A presentation by Marek Zmysłowski, Polish-born entrepreneur and co-founder of Rocket Internet, RTB House, OLX and GLOVO and author of the bestseller "Chasing Black Unicorns.')),
+                     (1, _('Access to a collection of important standard textbooks as ebooks accessible to all students when logged in to the university WiFi.')),
+                     (2, _('A number of scholarships (600-800 Zloty per student) for study abroad or internship abroad outside of funded programs (so-called free mover).')),
+                     (3, _('Financial support of selected Study Circles to support their activities, among others publications and conferences.')),
+                     (99, _('White vote')),
                     ]
 
 class Subsession(BaseSubsession):
@@ -52,6 +53,7 @@ class Group(BaseGroup):
         vote_result = dict()
         for p in players_vote_treatment:
             vote_result[p.treatment_vote] = vote_result.get(p.treatment_vote, 0) + 1
+        vote_result.pop(99, None) #delete counts of white vote (which is coded as 99)
         max_value = max(vote_result.values())
         most_voted = [key for key, value in vote_result.items() if value == max_value]
         # record if there is a tie
@@ -66,6 +68,7 @@ class Group(BaseGroup):
         vote_result = dict()
         for p in players_vote_treatment:
             vote_result[p.treatment_vote2] = vote_result.get(p.treatment_vote2, 0) + 1
+        vote_result.pop(99, None)  # delete counts of white vote (which is coded as 99)
         max_value = max(vote_result.values())
         most_voted = [key for key, value in vote_result.items() if value == max_value]
         # if tie, break the tie with random choice
@@ -76,10 +79,10 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     treatment_vote = models.IntegerField(label=False,
-                                         choices=Constants.voteOptions)
+                                         choices=Constants.voteOptions, initial=99)
 
     treatment_vote2 = models.IntegerField(label=False,
-                                         choices=Constants.voteOptions)
+                                         choices=Constants.voteOptions, initial=99)
     isVoteTreatment = models.BooleanField()
     isCouncilTreatment = models.BooleanField()
     isPresidentTreatment = models.BooleanField()

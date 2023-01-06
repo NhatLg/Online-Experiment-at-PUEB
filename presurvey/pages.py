@@ -19,17 +19,18 @@ class bIdRequest(TransMixin, Page):
 class cPanas(TransMixin, Page):
     form_model = 'player'
     form_fields = [
-        'panasDis',
-        'panasExc',
-        'panasUps',
-        'panasSca',
-        'panasEnt',
-        'panasAle',
-        'panasIns',
-        'panasNer',
-        'panasDet',
-        'panasAfr',
+        "panasUps",
+        "panasHos",
+        "panasAle",
+        "panasAsh",
+        "panasIns",
+        "panasNer",
+        "panasDet",
+        "panasAtt",
+        "panasAfr",
+        "panasAct",
     ]
+
     
 class dHypoEx1(TransMixin, Page):
     form_model = 'player'
