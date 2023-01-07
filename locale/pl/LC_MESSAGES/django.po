@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-24 10:59+0100\n"
+"POT-Creation-Date: 2023-01-06 18:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,159 +20,342 @@ msgstr ""
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: .\presurvey\models.py:51
-msgid "Interested"
-msgstr ""
-
-#: .\presurvey\models.py:52
-msgid "Distressed"
-msgstr ""
-
-#: .\presurvey\models.py:53
-msgid "Excited"
-msgstr ""
-
-#: .\presurvey\models.py:54
-msgid "Upset"
-msgstr ""
-
-#: .\presurvey\models.py:55
-msgid "Strong"
-msgstr ""
-
-#: .\presurvey\models.py:56
-msgid "Guilty"
-msgstr ""
-
-#: .\presurvey\models.py:57
-msgid "Scared"
-msgstr ""
-
-#: .\presurvey\models.py:58
-msgid "Hostile"
-msgstr ""
-
-#: .\presurvey\models.py:59
-msgid "Enthusiastic"
-msgstr ""
-
-#: .\presurvey\models.py:60
-msgid "Proud"
-msgstr ""
-
-#: .\presurvey\models.py:61
-msgid "Irritable"
-msgstr ""
-
-#: .\presurvey\models.py:62
-msgid "Alert"
-msgstr ""
-
-#: .\presurvey\models.py:63
-msgid "Ashamed"
-msgstr ""
-
-#: .\presurvey\models.py:64
-msgid "Inspired"
-msgstr ""
-
-#: .\presurvey\models.py:65
-msgid "Nervous"
-msgstr ""
-
-#: .\presurvey\models.py:66
-msgid "Determined"
-msgstr ""
-
-#: .\presurvey\models.py:67
-msgid "Attentive"
-msgstr ""
-
-#: .\presurvey\models.py:68
-msgid "Jittery"
-msgstr ""
-
-#: .\presurvey\models.py:69
-msgid "Active"
-msgstr ""
-
-#: .\presurvey\models.py:70
-msgid "Afraid"
-msgstr ""
-
-#: .\presurvey\models.py:77
-msgid "What phase of study are you currently in?"
-msgstr ""
-
-#: .\presurvey\models.py:79
-msgid "Bachelor"
-msgstr ""
-
-#: .\presurvey\models.py:80
-msgid "Master"
-msgstr ""
-
-#: .\presurvey\models.py:81
-msgid "PhD"
-msgstr ""
-
-#: .\presurvey\models.py:82
-msgid "Others"
-msgstr ""
-
-#: .\presurvey\models.py:84
-msgid "What is your study program"
-msgstr ""
-
-#: .\presurvey\models.py:85
-msgid "Did you vote in the last election for the student council?"
-msgstr ""
-
-#: .\presurvey\models.py:87 .\presurvey\models.py:100
+#: .\mindgame\models.py:50 .\presurvey\models.py:88 .\presurvey\models.py:101
 msgid "Yes"
 msgstr ""
 
-#: .\presurvey\models.py:88 .\presurvey\models.py:101
+#: .\mindgame\models.py:51 .\presurvey\models.py:89 .\presurvey\models.py:102
 msgid "No"
 msgstr ""
 
-#: .\presurvey\models.py:90
+#: .\mindgame\models.py:56
+msgid ""
+"0 correct predictions - your contribution is 15 Zloty, you earn extra 0 "
+"Zloty ( + your show-up fee)"
+msgstr ""
+
+#: .\mindgame\models.py:57
+msgid ""
+"1 correct predictions - your contribution is 14 Zloty , you earn extra 1 "
+"Zloty (+ your show-up fee)"
+msgstr ""
+
+#: .\mindgame\models.py:58
+msgid ""
+"2 correct predictions - your contribution is 13 Zloty , you earn extra 2 "
+"Zloty (+ your show-up fee)"
+msgstr ""
+
+#: .\mindgame\models.py:59
+msgid ""
+"3 correct predictions - your contribution is 12 Zloty , you earn extra 3 "
+"Zloty (+ your show-up fee)"
+msgstr ""
+
+#: .\mindgame\models.py:60
+msgid ""
+"4 correct predictions - your contribution is 11 Zloty , you earn extra 4 "
+"Zloty (+ your show-up fee)"
+msgstr ""
+
+#: .\mindgame\models.py:61
+msgid ""
+"5 correct predictions - your contribution is 10 Zloty , you earn extra 5 "
+"Zloty (+ your show-up fee)"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\a0TestCoin.html:82
+msgid "Testing for your device"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\a0TestCoin.html:86
+msgid ""
+"\n"
+"        <p> Before we continue with the last part of the experiment, we "
+"would like to test if your device can see the coin\n"
+"            below and flip it by clicking the button \"Flip Coin\".\n"
+"        </p>\n"
+"    "
+msgstr ""
+
+#: .\mindgame\templates\mindgame\a0TestCoin.html:102
+#: .\mindgame\templates\mindgame\bDecision.html:97
+#: .\mindgame\templates\mindgame\bDecisionText.html:91
+msgid "Flip Coin"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\a0TestCoin.html:107
+msgid ""
+"\n"
+"        <p> <b>Can you see the coin and flip it by clicking \"Flip Coin\"? </"
+"b></p>\n"
+"    "
+msgstr ""
+
+#: .\mindgame\templates\mindgame\aInstructions.html:6
+msgid "INSTRUCTIONS"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\aInstructions.html:10
+#, python-format
+msgid ""
+"\n"
+"        <p>\n"
+"            A few minutes ago, you were informed that 10 -15 Zloty per "
+"member in your group will be spent on\n"
+"            the following option:<br><br>\n"
+"            <i>%(last_vote_result)s</i><br><br>\n"
+"            The exact amount of money spent this way depends on your "
+"performance in the upcoming coinflip task. <br>\n"
+"\n"
+"            <br>The task involves predicting coin flips. The results of this "
+"coin flip determine the amount of Zloty\n"
+"            that you individually take out of the common pool funding the "
+"option above.<br>\n"
+"\n"
+"            <br>You will be asked to toss a virtual coin 5 times. By "
+"clicking on the button \"Flip Coin\" on the screen,\n"
+"            the coin is toss.<br>\n"
+"\n"
+"            <br>Before <b>EACH</b> toss, predict which side of the coin will "
+"be face-up. Think of the prediction in your head only\n"
+"            and remember it. You can make just one of two possible "
+"predictions:<br>\n"
+"            “I predict Heads will be face-up”<br>\n"
+"            Or<br>\n"
+"            “I predict Tails will be face-up.”<br>\n"
+"        </p>\n"
+"\n"
+"        <p>\n"
+"            Please make this prediction in your head, do not communicate "
+"your prediction to anyone including your\n"
+"            teacher, and toss the coin, repeat this process 5 times in total."
+"<br>\n"
+"\n"
+"            <br>If you correctly predict the coin toss all 5 times, then "
+"report 5.<br>\n"
+"            If you correctly predict the coin toss 4 times, then report 4."
+"<br>\n"
+"            Similarly, 3 correct predictions report 3; 2 correct predictions "
+"report 2; 1 correct prediction report 1.<br>\n"
+"            If you do not correctly predict any of the 5 coin tosses, then "
+"report 0.<br>\n"
+"\n"
+"            <br><b>Only the first 5 coin tosses will be counted.</b><br>\n"
+"            The first toss starts the first time you click on the \"Flip Coin"
+"\" button (excluding screen transition).\n"
+"        </p>\n"
+"\n"
+"\n"
+"    "
+msgstr ""
+
+#: .\mindgame\templates\mindgame\bDecision.html:82
+#: .\mindgame\templates\mindgame\bDecisionText.html:82
+#: .\postsurvey\templates\postsurvey\bAcceptance.html:6
+#: .\presurvey\templates\presurvey\ePersonalData.html:6
+#: .\presurvey\templates\presurvey\fAttitudes.html:6
+#: .\votingGame\templates\votingGame\cTreatmentVote.html:6
+#: .\votingGame\templates\votingGame\cTreatmentVote2.html:6
+msgid "Please answer the following questions"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\bDecision.html:101
+#: .\mindgame\templates\mindgame\bDecisionText.html:95
+#, python-format
+msgid ""
+"\n"
+"        <p> <b>Please make a prediction in your head then complete your coin "
+"toss (by clicking the button \"Flip Coin\") now,\n"
+"            repeat this process 5 times in total.</b> <br><br>\n"
+"            Report your outcomes using the form below. Your performance in "
+"the coin-flip task determines\n"
+"            your individual payoff from the experiment and your contribution "
+"to the option: <br>\n"
+"            <i>%(last_vote_result)s</i>\n"
+"        </p>\n"
+"    "
+msgstr ""
+
+#: .\mindgame\templates\mindgame\bDecisionText.html:86
+msgid ""
+"Since your device cannot display the coin, please use the text result below:"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\cClosing.html:6
+msgid "CLOSING"
+msgstr ""
+
+#: .\mindgame\templates\mindgame\cClosing.html:10
+msgid ""
+"\n"
+"        <p>\n"
+"            Thank you for participating in the experiment.<br>\n"
+"            Please keep your card. You will need it to collect your "
+"individual payment from the experiment.\n"
+"            You can collect the payment [when, where].\n"
+"            Just come by, bring the card sign a receipt that you received "
+"the money and receive the money in cash.\n"
+"        </p>\n"
+"    "
+msgstr ""
+
+#: .\postsurvey\models.py:50 .\presurvey\models.py:52
+msgid "Upset"
+msgstr ""
+
+#: .\postsurvey\models.py:51 .\presurvey\models.py:53
+msgid "Hostile"
+msgstr ""
+
+#: .\postsurvey\models.py:52 .\presurvey\models.py:54
+msgid "Alert"
+msgstr ""
+
+#: .\postsurvey\models.py:53 .\presurvey\models.py:55
+msgid "Ashamed"
+msgstr ""
+
+#: .\postsurvey\models.py:54 .\presurvey\models.py:56
+msgid "Inspired"
+msgstr ""
+
+#: .\postsurvey\models.py:55 .\presurvey\models.py:57
+msgid "Nervous"
+msgstr ""
+
+#: .\postsurvey\models.py:56 .\presurvey\models.py:58
+msgid "Determined"
+msgstr ""
+
+#: .\postsurvey\models.py:57 .\presurvey\models.py:59
+msgid "Attentive"
+msgstr ""
+
+#: .\postsurvey\models.py:58 .\presurvey\models.py:60
+msgid "Afraid"
+msgstr ""
+
+#: .\postsurvey\models.py:59 .\presurvey\models.py:61
+msgid "Active"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\aPanas.html:6
+msgid "How do you feel at this moment ?"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\aPanas.html:14
+#: .\presurvey\templates\presurvey\cPanas.html:14
+msgid "Very slightly or not at all"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\aPanas.html:15
+#: .\presurvey\templates\presurvey\cPanas.html:15
+msgid "A little"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\aPanas.html:16
+#: .\presurvey\templates\presurvey\cPanas.html:16
+msgid "Moderately"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\aPanas.html:17
+#: .\presurvey\templates\presurvey\cPanas.html:17
+msgid "Quite a bit"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\aPanas.html:18
+#: .\presurvey\templates\presurvey\cPanas.html:18
+msgid "Extremely "
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\bAcceptance.html:10
+msgid ""
+"\n"
+"        What do you think about this decision? <br>\n"
+"        Please use the scale below to express your view. <br><br>\n"
+"\n"
+"    "
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\bAcceptance.html:18
+msgid ""
+"The decision has been reached in a legitimate way and is thus acceptable"
+msgstr ""
+
+#: .\postsurvey\templates\postsurvey\bAcceptance.html:27
+msgid "The decision is not acceptable"
+msgstr ""
+
+#: .\presurvey\models.py:35
+msgid "The numbers must add up to 100"
+msgstr ""
+
+#: .\presurvey\models.py:78
+msgid "What phase of study are you currently in?"
+msgstr ""
+
+#: .\presurvey\models.py:80
+msgid "Bachelor"
+msgstr ""
+
+#: .\presurvey\models.py:81
+msgid "Master"
+msgstr ""
+
+#: .\presurvey\models.py:82
+msgid "PhD"
+msgstr ""
+
+#: .\presurvey\models.py:83
+msgid "Others"
+msgstr ""
+
+#: .\presurvey\models.py:85
+msgid "What is your study program"
+msgstr ""
+
+#: .\presurvey\models.py:86
+msgid "Did you vote in the last election for the student council?"
+msgstr ""
+
+#: .\presurvey\models.py:91
 msgid "What is your gender?"
 msgstr ""
 
-#: .\presurvey\models.py:92
+#: .\presurvey\models.py:93
 msgid "Male"
 msgstr ""
 
-#: .\presurvey\models.py:93
+#: .\presurvey\models.py:94
 msgid "Female"
 msgstr ""
 
-#: .\presurvey\models.py:94
+#: .\presurvey\models.py:95
 msgid "Diverse"
 msgstr ""
 
-#: .\presurvey\models.py:96
+#: .\presurvey\models.py:97
 msgid "What is your age?"
 msgstr ""
 
-#: .\presurvey\models.py:97
+#: .\presurvey\models.py:98
 msgid "What is your mother tongue?"
 msgstr ""
 
-#: .\presurvey\models.py:98
+#: .\presurvey\models.py:99
 msgid "Do you work to fund your study?"
 msgstr ""
 
-#: .\presurvey\models.py:106
+#: .\presurvey\models.py:107
 msgid "Other people"
 msgstr ""
 
-#: .\presurvey\models.py:108
+#: .\presurvey\models.py:109
 msgid "University council"
 msgstr ""
 
-#: .\presurvey\models.py:110
+#: .\presurvey\models.py:111
 msgid "Student council"
 msgstr ""
 
@@ -193,18 +376,17 @@ msgid ""
 "        <br>By participating in this experiment, you support their research."
 "<br>\n"
 "\n"
-"        The experiment will take about 20 minutes.<br>\n"
+"        The experiment will take about <b>20 minutes</b>.<br>\n"
 "        Every participant who takes part and answers all questions receives "
-"a show-up fee of 5 Zloty.\n"
-"        In addition, there is the chance to earn another 5 Zloty during the "
-"experiment.<br>\n"
+"a <b>show-up fee of 5 Zloty</b>.<br>\n"
+"        In addition, there is the <b>chance to earn another 5 Zloty</b> "
+"during the experiment.<br>\n"
 "        The outcome of the experiment has an impact on the study conditions "
 "at the Poznan University of\n"
 "        Economics and Business.<br>\n"
 "\n"
 "        <br><strong>Please do not talk to your fellow students during the "
 "experiment.</strong>\n"
-"\n"
 "    "
 msgstr ""
 
@@ -224,7 +406,7 @@ msgstr ""
 msgid ""
 "\n"
 "        Please keep the card. You need it to collect the payoff of the "
-"experiment.<br>\n"
+"experiment.<br><br>\n"
 "        We use this card rather to guarantee anonymity. We will not ask for "
 "your name or any other\n"
 "        information that enables us to connect your behavior in this "
@@ -232,27 +414,16 @@ msgid ""
 "    "
 msgstr ""
 
-#: .\presurvey\templates\presurvey\cPanas.html:13
-msgid "Very slightly or not at all"
+#: .\presurvey\templates\presurvey\cPanas.html:6
+msgid "How do you feel at <b>this moment</b>?"
 msgstr ""
 
-#: .\presurvey\templates\presurvey\cPanas.html:14
-msgid "A little"
-msgstr ""
-
-#: .\presurvey\templates\presurvey\cPanas.html:15
-msgid "Moderately"
-msgstr ""
-
-#: .\presurvey\templates\presurvey\cPanas.html:16
-msgid "Quite a bit"
-msgstr ""
-
-#: .\presurvey\templates\presurvey\cPanas.html:17
-msgid "Extremely "
+#: .\presurvey\templates\presurvey\dHypoEx1.html:6
+msgid "Hypothetical exercise"
 msgstr ""
 
 #: .\presurvey\templates\presurvey\dHypoEx1.html:10
+#, python-format
 msgid ""
 "\n"
 "        Assume that the university provided every student at Poznan "
@@ -261,28 +432,31 @@ msgid ""
 "university.\n"
 "        It can be spent on the following options:<br>\n"
 "    <br>\n"
-"    (I)     A series of presentation by famous entrepreneurs, among them "
-"Marek Zmysłowski (firm(s), +1-2 facts).<br>\n"
-"    (II)    Access to a collection of standard textbooks in English language "
-"(ebooks) for every student.<br>\n"
-"    (III)   Scholarships for study abroad (or internship abroad) outside of "
-"funded programs (i.e. free mover).<br>\n"
-"    (IV)\tInstallation/Support of a study circle [Here, we need to be more "
-"precise].<br>\n"
+"    (I)     A series of presentations by well-known entrepreneurs, among "
+"them Marek Zmysłowski,\n"
+"            Polish-born entrepreneur and co-founder of Rocket Internet, RTB "
+"House, OLX and GLOVO and author of\n"
+"            the bestseller \"Chasing Black Unicorns.\"<br><br>\n"
+"    (II)    Access to a collection of important standard textbooks as ebooks "
+"accessible to all\n"
+"            students when logged in to the university WiFi. <br><br>\n"
+"    (III)   A number of scholarships (600-800 Zloty per student) for study "
+"abroad or internship\n"
+"            abroad outside of funded programs (so-called free mover)."
+"<br><br>\n"
+"    (IV)\tFinancial support of selected Study Circles to support their "
+"activities,\n"
+"            among others publications and conferences. <br><br>\n"
 "\n"
-"    <br>How should this money be distributed?<br>\n"
+"<br><b>How should this money be distributed (in percentage?)</b><br>\n"
 "\n"
 "    <br>Please note that your answer is purely hypothetical. It does not "
-"have any real-life consequences. <br>\n"
+"have any real-life consequences.<br>\n"
 "\n"
+"    <br>Please make sure that all of the options below add up to 100.\n"
+"You only need to fill in the number <b>without</b> the percentage sign \"%%"
+"\".\n"
 "    "
-msgstr ""
-
-#: .\presurvey\templates\presurvey\ePersonalData.html:6
-#: .\presurvey\templates\presurvey\fAttitudes.html:6
-#: .\votingGame\templates\votingGame\cTreatmentVote.html:6
-#: .\votingGame\templates\votingGame\cTreatmentVote2.html:6
-msgid "Please answer the following questions"
 msgstr ""
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:10
@@ -290,54 +464,79 @@ msgid ""
 "\n"
 "        The philosopher Immanuel Kant (1724-1804) proposed the well-known "
 "Categorical Imperative: An\n"
-"        individual shall “[…] act only on that maxim through which you can "
-"at the same time will that it\n"
-"        should become a universal law.” (Kant, 1907: 88).<br>\n"
+"        individual shall <i>“[…] act only on that maxim through which you "
+"can at the same time will that it\n"
+"        should become a universal law.”</i> (Kant, 1907: 88), meaning that "
+"you should act a certain way only if\n"
+"        you’re willing to have everyone else act the same way too. <br>\n"
 "\n"
 "        <br><b>What do you think. To what degree should people follow this "
 "guideline when making decisions in their\n"
-"    everyday life?</b>\n"
+"        everyday life?</b>\n"
 "    "
 msgstr ""
 
-#: .\presurvey\templates\presurvey\fAttitudes.html:21
-#: .\presurvey\templates\presurvey\fAttitudes.html:48
-msgid "Not at all"
+#: .\presurvey\templates\presurvey\fAttitudes.html:22
+msgid "Never follow it"
 msgstr ""
 
-#: .\presurvey\templates\presurvey\fAttitudes.html:30
-#: .\presurvey\templates\presurvey\fAttitudes.html:51
-msgid "Absolutely"
+#: .\presurvey\templates\presurvey\fAttitudes.html:31
+msgid "Always follow it"
 msgstr ""
 
-#: .\presurvey\templates\presurvey\fAttitudes.html:41
+#: .\presurvey\templates\presurvey\fAttitudes.html:42
 msgid ""
 "\n"
 "        <b>How much do you trust in:</b>\n"
 "    "
 msgstr ""
 
+#: .\presurvey\templates\presurvey\fAttitudes.html:49
+msgid "No Trust"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:50
+msgid "Little Trust"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:51
+msgid "Much Trust"
+msgstr ""
+
+#: .\presurvey\templates\presurvey\fAttitudes.html:52
+msgid "Very Much Trust"
+msgstr ""
+
 #: .\votingGame\models.py:26
-msgid "A presentation the famous entrepreneur Marek Zmysłowski"
-msgstr "Polish A presentation the famous entrepreneur Marek Zmysłowski"
+msgid ""
+"A presentation by Marek Zmysłowski, Polish-born entrepreneur and co-founder "
+"of Rocket Internet, RTB House, OLX and GLOVO and author of the bestseller "
+"\"Chasing Black Unicorns."
+msgstr ""
 
 #: .\votingGame\models.py:27
 msgid ""
-"Access to a collection of standard textbooks in English language (ebooks) "
-"for every student"
+"Access to a collection of important standard textbooks as ebooks accessible "
+"to all students when logged in to the university WiFi."
 msgstr ""
 
 #: .\votingGame\models.py:28
 msgid ""
-"Scholarships for study abroad (or internship abroad) outside of funded "
-"programs (i.e. free mover)"
+"A number of scholarships (600-800 Zloty per student) for study abroad or "
+"internship abroad outside of funded programs (so-called free mover)."
 msgstr ""
 
 #: .\votingGame\models.py:29
-msgid "Installation/Support of a study circle"
+msgid ""
+"Financial support of selected Study Circles to support their activities, "
+"among others publications and conferences."
 msgstr ""
 
-#: .\votingGame\pages.py:19 .\votingGame\pages.py:31 .\votingGame\pages.py:55
+#: .\votingGame\models.py:30
+msgid "White vote"
+msgstr ""
+
+#: .\votingGame\pages.py:19 .\votingGame\pages.py:38 .\votingGame\pages.py:71
 msgid "Waiting for other players"
 msgstr ""
 
@@ -345,7 +544,7 @@ msgstr ""
 msgid "waiting for other players to get ready before splitting into groups..."
 msgstr ""
 
-#: .\votingGame\pages.py:32 .\votingGame\pages.py:56
+#: .\votingGame\pages.py:39 .\votingGame\pages.py:72
 msgid "waiting for other players and calculate voting result..."
 msgstr ""
 
@@ -356,39 +555,61 @@ msgstr ""
 #: .\votingGame\templates\votingGame\aIntro.html:10
 msgid ""
 "\n"
-"        For every participant of today’s experiment, there are 10 Zloty from "
-"public sources.\n"
+"        <b>For every participant</b> of today’s experiment, there are 10-15 "
+"Zloty from public sources.\n"
 "        This money is earmarked for improving study conditions at the Poznan "
-"University of Economics and Business. It can be spent on the following "
-"options:\n"
+"University of Economics and Business.\n"
+"        It can be spent on the following options:<br><br>\n"
 "        <ul>\n"
-"            <li> A presentation the famous entrepreneur Marek Zmysłowski "
-"(firm(s), +1-2 facts) </li>\n"
-"            <li> Access to a collection of standard textbooks in English "
-"language (ebooks) for every student </li>\n"
-"            <li> Scholarships for study abroad (or internship abroad) "
-"outside of funded programs (i.e. free mover). </li>\n"
-"            <li> Installation/Support of a study circle [Here, we need to be "
-"more precise]. </li>\n"
+"            <li> A presentation by Marek Zmysłowski, Polish-born "
+"entrepreneur and co-founder of Rocket Internet,\n"
+"                RTB House, OLX and GLOVO and author of the bestseller "
+"\"Chasing Black Unicorns.\" </li><br>\n"
+"            <li> Access to a collection of important standard textbooks as "
+"ebooks accessible to all students\n"
+"                when logged in to the university WiFi.  </li><br>\n"
+"            <li> A number of scholarships (600-800 Zloty per student) for "
+"study abroad or internship abroad outside\n"
+"                of funded programs (so-called free mover). </li><br>\n"
+"            <li> Financial support of selected Study Circles to support "
+"their activities,\n"
+"                among others publications and conferences. </li><br>\n"
 "        </ul>\n"
-"        The question is: What should the 10 Zloty per student be spent on?\n"
+"        The question is: <b>What should the 10-15 Zloty per student be spent "
+"on?</b><br><br>\n"
+"\n"
+"        We randomly divided all participants in today’s experiments into "
+"three groups of about equal size. <br>\n"
+"        <b>Please do not communicate with each other when answering the "
+"upcoming questions.</b><br>\n"
+"        If you have problem, please raise your hand so the experimenter can "
+"help you.<br>\n"
+"\n"
 "    "
 msgstr ""
 
 #: .\votingGame\templates\votingGame\cTreatmentVote.html:10
 msgid ""
 "\n"
-"        In your group, the decision about how to spent the 10 Zloty per "
-"student is made in majority voting.\n"
-"        The option that receives the absolute majority of votes is chosen "
-"and the 10 Zloty of every\n"
-"        group member is spent on this option. If no absolute majority is "
-"reached in the first voting round,\n"
-"        there will be a second round of voting. <br>\n"
-"        Note that the decision now has real-life consequences. <br>\n"
-"        The decision reached in your group will be executed. <br>\n"
-"        <br> Now please cast your vote: <br>\n"
-"        What should the 10 Zloty per member of your group be spent on?\n"
+"    In your group, the decision about how to spent the 10-15 Zloty per "
+"student is made in majority voting. <br><br>\n"
+"\n"
+"    The option that receives the absolute majority of votes is chosen and "
+"the 10-15 Zloty of every group member is\n"
+"    spent on this option. In case there is no majority, the two options that "
+"receive most votes will enter\n"
+"    a run-off election. In the unlikely case of a tie, one of the two "
+"options is chosen at random.<br><br>\n"
+"\n"
+"    Note: <b>The decision now has real-life consequences.</b> The decision "
+"reached in your group will be executed.\n"
+"    <b>For every student participating in your group, 10-15 Zloty per person "
+"will be spent on the option\n"
+"    that receives the majority.</b><br>\n"
+"    Now please cast your vote.<br><br>\n"
+"\n"
+"    What should the 10-15 Zloty per member of your group be spent on?"
+"<br><br>\n"
 "\n"
 "    "
 msgstr ""
@@ -405,7 +626,8 @@ msgid ""
 "                Your group reached the following decision by majority voting."
 "<br>\n"
 "\n"
-"                The 10 Zloty of every group member is spent on the option:\n"
+"                For every member of your group, 10-15 Zloty are spent on the "
+"following option:\n"
 "            "
 msgstr ""
 
@@ -415,37 +637,84 @@ msgid " There is a tie, therefore, we will be voting again. "
 msgstr ""
 
 #: .\votingGame\templates\votingGame\dTreatmentCouncil.html:6
-msgid "Council"
+msgid "Council Decision"
 msgstr ""
 
 #: .\votingGame\templates\votingGame\dTreatmentCouncil.html:10
 msgid ""
 "\n"
 "\n"
-"        For the 10 Zloty assigned to your group, we asked the student "
-"council at the Poznan University of Economics\n"
-"        to make the decision majority voting. <br>\n"
+"For the 10-15 Zloty per student in your group, we asked <b>the student "
+"council</b> at your university\n"
+"        (<i>Karolina Rutkowska</i> - Vice-President of the PUEB Student "
+"Parliament, <i>Aleksandra Matusiak</i>\n"
+"        - Vice-President of the PUEB Student Parliament, and <i>Wiktoria "
+"Walkowiak</i>\n"
+"        - President of the PUEB Student Parliament)\n"
+"        to make the decision majority voting on what the money is spent.\n"
+"        These were the options:<br><br>\n"
+"        <ul>\n"
+"            <li> A presentation by Marek Zmysłowski, Polish-born "
+"entrepreneur and co-founder of Rocket Internet,\n"
+"                RTB House, OLX and GLOVO and author of the bestseller "
+"\"Chasing Black Unicorns.\" </li><br>\n"
+"            <li> Access to a collection of important standard textbooks as "
+"ebooks accessible to all students\n"
+"                when logged in to the university WiFi.  </li><br>\n"
+"            <li> A number of scholarships (600-800 Zloty per student) for "
+"study abroad or internship abroad outside\n"
+"                of funded programs (so-called free mover). </li><br>\n"
+"            <li> Financial support of selected Study Circles to support "
+"their activities,\n"
+"                among others publications and conferences. </li><br>\n"
+"        </ul>\n"
 "        <br>The student council decided as follows<br>\n"
-"        The 10 Zloty of every group member is spent on the option "
-"______________\n"
+"        For every member of your group, 10-15 Zloty are spent on the "
+"following option:<br><br>\n"
+"\n"
+"        <b>A number of scholarships (600-800 Zloty per student) for study "
+"abroad or internship abroad\n"
+"            outside of funded programs (so-called free mover).</b>\n"
+"\n"
 "\n"
 "\n"
 "    "
 msgstr ""
 
 #: .\votingGame\templates\votingGame\dTreatmentPresident.html:6
-msgid "President"
+msgid "President Decision"
 msgstr ""
 
 #: .\votingGame\templates\votingGame\dTreatmentPresident.html:10
 msgid ""
 "\n"
-"        For the 10 Zloty assigned to your group, we asked the vice-president "
-"of the student council at the\n"
-"        Poznan University of Economics to make the decision.<br>\n"
-"        <br>Vice-President Name Surname decided as follows:<br>\n"
-"        The 10 Zloty of every group member is spent on the option "
-"______________<br>\n"
+"For the 10-15 Zloty per student in your group, we asked <i>Wiktoria "
+"Walkowiak</i> <b>the president</b> of the student council\n"
+"        at your university to make the decision on what the money is spent.\n"
+"        These were the options:<br><br>\n"
+"        <ul>\n"
+"            <li> A presentation by Marek Zmysłowski, Polish-born "
+"entrepreneur and co-founder of Rocket Internet,\n"
+"                RTB House, OLX and GLOVO and author of the bestseller "
+"\"Chasing Black Unicorns.\" </li><br>\n"
+"            <li> Access to a collection of important standard textbooks as "
+"ebooks accessible to all students\n"
+"                when logged in to the university WiFi.  </li><br>\n"
+"            <li> A number of scholarships (600-800 Zloty per student) for "
+"study abroad or internship abroad outside\n"
+"                of funded programs (so-called free mover). </li><br>\n"
+"            <li> Financial support of selected Study Circles to support "
+"their activities,\n"
+"                among others publications and conferences. </li><br>\n"
+"        </ul>\n"
+"        <br>The president <i>Wiktoria Walkowiak</i> decided as follows<br>\n"
+"        For every member of your group, 10-15 Zloty are spent on the "
+"following option:<br><br>\n"
+"\n"
+"        <b>A number of scholarships (600-800 Zloty per student) for study "
+"abroad or internship abroad\n"
+"            outside of funded programs (so-called free mover).</b>\n"
+"\n"
 "\n"
 "    "
 msgstr ""
