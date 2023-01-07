@@ -37,3 +37,16 @@ You only need to fill in the number <b>without</b> the percentage sign "%".
     {% next_button %}
 
 {% endblock %}
+
+{# ****************************************************************************************************************** #}
+{# *** SCRIPTS *** #}
+{# ****************************************************************************************************************** #}
+{% block scripts %}
+    <script>
+        document.addEventListener("wheel", function(event){
+        if(document.activeElement.type === "number"){
+            document.activeElement.blur();
+        }
+        });
+    </script>
+{% endblock %}
