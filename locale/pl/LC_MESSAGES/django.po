@@ -22,51 +22,63 @@ msgstr ""
 
 #: .\mindgame\models.py:50 .\presurvey\models.py:88 .\presurvey\models.py:101
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: .\mindgame\models.py:51 .\presurvey\models.py:89 .\presurvey\models.py:102
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: .\mindgame\models.py:56
 msgid ""
-"0 correct predictions - your contribution is 15 Zloty, you earn extra 0 "
-"Zloty ( + your show-up fee)"
+"0 correct predictions - your contribution is 15 Zloty, you earn extra 0 zl "
+"zł. ( + your show-up fee)"
 msgstr ""
+"0 poprawnych przewidywań - Twój wkład to 15 zł., zarabiasz dodatkowo 0 zł. "
+"zł. ( + Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:57
 msgid ""
-"1 correct predictions - your contribution is 14 Zloty , you earn extra 1 "
+"1 correct predictions - your contribution is 14 Zloty , you earn extra 1 zl"
 "Zloty (+ your show-up fee)"
 msgstr ""
+"1 poprawne przewidywanie - Twój wkład to 14 zł., zarabiasza dodatkowo 1 zł."
+"zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:58
 msgid ""
 "2 correct predictions - your contribution is 13 Zloty , you earn extra 2 "
 "Zloty (+ your show-up fee)"
 msgstr ""
+"2 poprawne przewidywania - Twój wkład to 13 zł., you earn extra 2 zł. "
+"zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:59
 msgid ""
 "3 correct predictions - your contribution is 12 Zloty , you earn extra 3 "
 "Zloty (+ your show-up fee)"
 msgstr ""
+"3 poprawne przewidywania - Twój wkład to 12 zł., you earn extra 3 zł. "
+"zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:60
 msgid ""
 "4 correct predictions - your contribution is 11 Zloty , you earn extra 4 "
 "Zloty (+ your show-up fee)"
 msgstr ""
+"4 poprawne przewidywania - Twój wkład to 11 zł., you earn extra 4 zł. "
+"zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:61
 msgid ""
 "5 correct predictions - your contribution is 10 Zloty , you earn extra 5 "
 "Zloty (+ your show-up fee)"
 msgstr ""
+"5 poprawnych przewidywań - Twój wkład to 10 zł., you earn extra 5 zł. "
+"zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\templates\mindgame\a0TestCoin.html:82
 msgid "Testing for your device"
-msgstr ""
+msgstr "Testujemy Twoje urządzenie"
 
 #: .\mindgame\templates\mindgame\a0TestCoin.html:86
 msgid ""
@@ -77,12 +89,18 @@ msgid ""
 "        </p>\n"
 "    "
 msgstr ""
+"\n"
+"        <p> Przed przejściem do ostatniego etapu eksperymentu "
+"chcielibyśmy sprawdzić, czy Twoje urządzenie widzi monetę\n"
+"            poniżej i obraca nią po kliknięciu na guzik \"Rzuć monetą\".\n"
+"        </p>\n"
+"    "
 
 #: .\mindgame\templates\mindgame\a0TestCoin.html:102
 #: .\mindgame\templates\mindgame\bDecision.html:97
 #: .\mindgame\templates\mindgame\bDecisionText.html:91
 msgid "Flip Coin"
-msgstr ""
+msgstr "Rzuć monetą"
 
 #: .\mindgame\templates\mindgame\a0TestCoin.html:107
 msgid ""
@@ -91,10 +109,14 @@ msgid ""
 "b></p>\n"
 "    "
 msgstr ""
+"\n"
+"        <p> <b>Czy widzisz monetę i rzucasz nią poprzez kliknięcie \"Rzuć monetą\"? </"
+"b></p>\n"
+"    "
 
 #: .\mindgame\templates\mindgame\aInstructions.html:6
 msgid "INSTRUCTIONS"
-msgstr ""
+msgstr "INSTRUKCJA"
 
 #: .\mindgame\templates\mindgame\aInstructions.html:10
 #, python-format
@@ -149,7 +171,55 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-
+"\n"
+"        <p>\n"
+"            Przed chwilą zostałęś poinformowany, że 10-15 zł. na "
+"członka Twojej grupy zostanie przeznaczone na\n"
+"            następującą opcję:<br><br>\n"
+"            <i>%(last_vote_result)s</i><br><br>\n"
+"            Ostateczna kwota wydana na ten cel zależy od tego, "
+"jak skuteczny będziesz w kolejnym zadaniu: w rzucie monetą. <br>\n"
+"\n"
+"            <br>To zdanie polega na przewidywaniu wyników rzutu monetą. Wynik "
+"rzutu monetą wpływa na kwotę,\n"
+"            którą ostatecznie wypłacimy indywidualnie z puli finansowej w Twoim imieniu na "
+"wybraną opcję powyżej.<br>\n"
+"\n"
+"            <br>Zostaniesz poproszony o rzucenie wirtualną monetą 5 razy. Poprzez "
+"klinknięcie na guzik \"Rzuć monetą\" na ekranie,\n"
+"            moneta zostanie rzucona.<br>\n"
+"\n"
+"            <br>Przed <b>KAŻDYM</b> rzutem, postaraj się przewidzieć, która strona monety "
+"zostanie wyrzucona. Zachowaj Twoje przewidywanie jedynie w swojej głowie\n"
+"            i zapamietaj. Możesz wykonać jedynie jedno z dwóch możliwych "         
+"przewidywań:<br>\n"
+"            “Przewiduje: ORZEŁ”<br>\n"
+"            Or<br>\n"
+"            “Przewiduję: RESZKA”<br>\n"
+"        </p>\n"
+"\n"
+"        <p>\n"
+"            Wykonaj to przewidywanie w swojej głowie, nie mów nikomu "
+"o Twoim przewidywaniu, łącznie z\n"
+"            nauczycielem, i rzuć monetą, powtórz ten proces 5 razy."
+"<br>\n"
+"\n"
+"            <br> Jeśli właściwie przewidziałeś wynik 5 razy "
+"zgłoś 5.<br>\n"
+"            Jeśli właściwie przewidziałeś wynik 4 razy, zgłoś 4."
+"<br>\n"
+"            Jeśli właściwie przewidziałeś wynik 3 razy, zgłoś 3; Jeśli właściwie przewidziałeś wynik 2 razy, "
+"zgloś 2; jeśli właściwie przewidziałeś wynik 1 raz, zgłoś 1.<br>\n"
+"            Jeśli nie przewidziełaś wyniku żadnego z 5 rzutów , wówczas "
+"zgłoś 0.<br>\n"
+"\n"
+"            <br><b>Tylko pierwsze 5 rzutów monetą zostanie zaliczone.</b><br>\n"
+"            Pierwszy rzut nastąpi po kliknięciu na \"Rzuć monetą"
+"\" guzik (wyłączając przejścia między ekranami).\n"
+"        </p>\n"
+"\n"
+"\n"
+"    "
 #: .\mindgame\templates\mindgame\bDecision.html:82
 #: .\mindgame\templates\mindgame\bDecisionText.html:82
 #: .\postsurvey\templates\postsurvey\bAcceptance.html:6
@@ -158,7 +228,7 @@ msgstr ""
 #: .\votingGame\templates\votingGame\cTreatmentVote.html:6
 #: .\votingGame\templates\votingGame\cTreatmentVote2.html:6
 msgid "Please answer the following questions"
-msgstr ""
+msgstr "Odpowiedz na następujące pytanie"
 
 #: .\mindgame\templates\mindgame\bDecision.html:101
 #: .\mindgame\templates\mindgame\bDecisionText.html:95
@@ -176,15 +246,27 @@ msgid ""
 "        </p>\n"
 "    "
 msgstr ""
+"\n"
+"        <p> <b>Wykonaj przewidywanie w Twojej głowie i rzuć "
+"monetą (klikajac na guzik\"Rzuć monetą\") teraz,\n"
+"            powtórz ten proces w sumie 5 razy.</b> <br><br>\n"
+"            Zgłoś swój wynik używając formularza poniżej. Twoja skuteczność w zadaniu z "
+"rzutem monetą determinuje\n"
+"            twoja indywidualna korzyść finansową z eksperymentu i wysokość Twojego wkładu"
+"w finansowanie celu: <br>\n"
+"            <i>%(last_vote_result)s</i>\n"
+"        </p>\n"
+"    "
 
 #: .\mindgame\templates\mindgame\bDecisionText.html:86
 msgid ""
 "Since your device cannot display the coin, please use the text result below:"
 msgstr ""
+"Ponieważ Twoje urządzenie nie może wyświetlić monety, proszę użyć wyniku tekstowego poniżej:"
 
 #: .\mindgame\templates\mindgame\cClosing.html:6
 msgid "CLOSING"
-msgstr ""
+msgstr "ZAMKNIĘCIE"
 
 #: .\mindgame\templates\mindgame\cClosing.html:10
 msgid ""
@@ -199,75 +281,84 @@ msgid ""
 "        </p>\n"
 "    "
 msgstr ""
-
+"\n"
+"        <p>\n"
+"            Dziękujemy za udział w eksperymencie.<br>\n"
+"            Zachowaj swoją kartę. Będziesz jej potrzebował przy wypłacie"
+"indywidualnego wynagrodzenia z eksperymentu.\n"
+"            Możesz odebrać swoje wynagrodzenie [data, miejsce].\n"
+"            Wystarczy, że pojawisz się z kartą i podpiszesz rachunek"
+"wypłaty gotówki.\n"
+"        </p>\n"
+"    "
 #: .\postsurvey\models.py:50 .\presurvey\models.py:52
 msgid "Upset"
-msgstr ""
+msgstr "Zdenerwowany"
 
 #: .\postsurvey\models.py:51 .\presurvey\models.py:53
 msgid "Hostile"
-msgstr ""
+msgstr "Wrogi"
 
 #: .\postsurvey\models.py:52 .\presurvey\models.py:54
 msgid "Alert"
-msgstr ""
+msgstr "Ostrożny"
 
 #: .\postsurvey\models.py:53 .\presurvey\models.py:55
 msgid "Ashamed"
-msgstr ""
+msgstr "Zawstydzony"
 
 #: .\postsurvey\models.py:54 .\presurvey\models.py:56
 msgid "Inspired"
-msgstr ""
+msgstr "Zainspirowany"
 
 #: .\postsurvey\models.py:55 .\presurvey\models.py:57
 msgid "Nervous"
-msgstr ""
+msgstr "Nerwowy"
 
 #: .\postsurvey\models.py:56 .\presurvey\models.py:58
 msgid "Determined"
-msgstr ""
+msgstr "Zdeterminowany"
 
 #: .\postsurvey\models.py:57 .\presurvey\models.py:59
 msgid "Attentive"
-msgstr ""
+msgstr "Uważny"
 
 #: .\postsurvey\models.py:58 .\presurvey\models.py:60
 msgid "Afraid"
-msgstr ""
+msgstr "Przestraszony"
 
 #: .\postsurvey\models.py:59 .\presurvey\models.py:61
 msgid "Active"
-msgstr ""
+msgstr "Aktywny"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:6
-msgid "How do you feel at this moment ?"
-msgstr ""
+msgid "How do you feel at <b>this moment</b> ?"
+msgstr "Jak się czujesz w <b>tym momencie</b>?"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:14
 #: .\presurvey\templates\presurvey\cPanas.html:14
 msgid "Very slightly or not at all"
-msgstr ""
+msgstr "Nieznacznie lub wcale"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:15
 #: .\presurvey\templates\presurvey\cPanas.html:15
 msgid "A little"
-msgstr ""
+msgstr "Trochę"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:16
 #: .\presurvey\templates\presurvey\cPanas.html:16
 msgid "Moderately"
-msgstr ""
+msgstr "Umiarkowanie"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:17
 #: .\presurvey\templates\presurvey\cPanas.html:17
 msgid "Quite a bit"
-msgstr ""
+msgstr "Dość mocno"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:18
 #: .\presurvey\templates\presurvey\cPanas.html:18
 msgid "Extremely "
-msgstr ""
+msgstr "Bardzo"
 
 #: .\postsurvey\templates\postsurvey\bAcceptance.html:10
 msgid ""
@@ -277,91 +368,99 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-
+"\n"
+"        Co myślisz o tej decyzji? <br>\n"
+"        Użyj skali poniżej, by wyrazić swoją opinię. <br><br>\n"
+"\n"
+"    "
 #: .\postsurvey\templates\postsurvey\bAcceptance.html:18
 msgid ""
 "The decision has been reached in a legitimate way and is thus acceptable"
-msgstr ""
+msgstr "Decyzja została podjęta w sposób zgodny z prawem, a zatem jest możliwa do przyjęcia"
 
 #: .\postsurvey\templates\postsurvey\bAcceptance.html:27
 msgid "The decision is not acceptable"
-msgstr ""
+msgstr "Decyzja jest nieakceptowalna"
 
 #: .\presurvey\models.py:35
 msgid "The numbers must add up to 100"
-msgstr ""
+msgstr "Liczby muszą się sumować do 100"
 
 #: .\presurvey\models.py:78
 msgid "What phase of study are you currently in?"
-msgstr ""
+msgstr "Na jakim etapie edukacji jesteś obecnie?"
 
 #: .\presurvey\models.py:80
 msgid "Bachelor"
-msgstr ""
+msgstr "Studia licencjackie"
 
 #: .\presurvey\models.py:81
 msgid "Master"
-msgstr ""
+msgstr "Studia magisterskie"
 
 #: .\presurvey\models.py:82
 msgid "PhD"
-msgstr ""
+msgstr "Szkoła Doktroska"
 
 #: .\presurvey\models.py:83
 msgid "Others"
-msgstr ""
+msgstr "Inne"
 
 #: .\presurvey\models.py:85
 msgid "What is your study program"
-msgstr ""
+msgstr "Wskaż fakultet studiów"
 
 #: .\presurvey\models.py:86
 msgid "Did you vote in the last election for the student council?"
-msgstr ""
+msgstr "Czy głosowałeś w ostatnich wyborach do Rady Studenckiej"
 
 #: .\presurvey\models.py:91
 msgid "What is your gender?"
-msgstr ""
+msgstr "Jaka jest Twoja płeć?"
 
 #: .\presurvey\models.py:93
 msgid "Male"
-msgstr ""
+msgstr "Mężczyzna"
 
 #: .\presurvey\models.py:94
 msgid "Female"
-msgstr ""
+msgstr "Kobieta"
 
 #: .\presurvey\models.py:95
 msgid "Diverse"
-msgstr ""
+msgstr "Inna"
+
+#: .\presurvey\models.py:95
+msgid "I would rather not to answer"
+msgstr "Wolę nie odpowiadać"
 
 #: .\presurvey\models.py:97
 msgid "What is your age?"
-msgstr ""
+msgstr "Ile masz lat?"
 
 #: .\presurvey\models.py:98
 msgid "What is your mother tongue?"
-msgstr ""
+msgstr "Jaki jest Twój język ojczysty"
 
 #: .\presurvey\models.py:99
 msgid "Do you work to fund your study?"
-msgstr ""
+msgstr "Czy pracujesz, by zarobić na studia?"
 
 #: .\presurvey\models.py:107
 msgid "Other people"
-msgstr ""
+msgstr "Innym Ludziom"
 
 #: .\presurvey\models.py:109
 msgid "University council"
-msgstr ""
+msgstr "Administracji uczelnianej"
 
 #: .\presurvey\models.py:111
 msgid "Student council"
-msgstr ""
+msgstr "Samorządowi studenckiemu"
 
 #: .\presurvey\templates\presurvey\aWelcome.html:6
 msgid "Welcome"
-msgstr ""
+msgstr "Witam"
 
 #: .\presurvey\templates\presurvey\aWelcome.html:10
 msgid ""
@@ -389,10 +488,32 @@ msgid ""
 "experiment.</strong>\n"
 "    "
 msgstr ""
-
+"\n"
+"        Dziś zapraszamy Ciebie do wzięcia udziału w eksperymencie ekonomicznym. Ten "
+"eksperyment jest częścią badania naukowego, projektu\n"
+"        prowadzonego przez studentów Szkoły Doktroskiej Uniwersytetu Ekonomicznego  "
+"w Poznaniu . W sumie,\n"
+"        w badaniu będzie uczestniczyć 500-600 studentów. Wszystkie sesje "
+"będą miały miejsce w marcu 2023.<br>\n"
+"\n"
+"        <br>Poprzez udział w eksperymencie, wspierasz ich badania."
+"<br>\n"
+"\n"
+"        Ten eksperyment zajmie około <b>20 minut</b>.<br>\n"
+"        Każdy uczestnik biorący udział w ekperymencie i odpowie na wszystkie pytania otrzyma "
+"wynagrodzenie <b>za udział w eksperymencie w wysokości 5 zł.</b><br>\n"
+"        Ponadto istnieje <b>szansa, by zarobić 5 zł. dodatkowo</b> "
+"podczas eksperymentu.<br>\n"
+"        Wynik tego eksperymentu ma realny wpływ na warunki studiowania "
+"na Uniwersytecie \n"
+"       Ekonomicznym w Poznaniu.<br>\n"
+"\n"
+"        <br><strong>Prosimy nie rozmawiać ze sobą podczas "
+"eksperymentu.</strong>\n"
+"    "
 #: .\presurvey\templates\presurvey\bIdRequest.html:6
 msgid "Identify Yourself"
-msgstr ""
+msgstr "Zidentyfikuj się"
 
 #: .\presurvey\templates\presurvey\bIdRequest.html:10
 msgid ""
@@ -401,7 +522,10 @@ msgid ""
 "This is your unique identifier.\n"
 "    "
 msgstr ""
-
+"\n"
+"        Prosimy o wprowadzenie swojego numeru identyfikacyjnego z kartki, którą otrzymałeś od nas"
+"To Twój unikalny numer identyfikacyjny.\n"
+"    "
 #: .\presurvey\templates\presurvey\bIdRequest.html:17
 msgid ""
 "\n"
@@ -413,14 +537,21 @@ msgid ""
 "experiment to your true identity.\n"
 "    "
 msgstr ""
-
+"\n"
+"        Zachowaj kartę z numerem identyfikacyjnym. Będzie Tobie potrzebna, aby odebrać "
+"wynagrodzenie za udział w eksperymencie.<br><br>\n"
+"        Jest ona po to, by zagwarantować anonimowość. Nie zapytamy o Twoje dane osobowe "
+"tj. imię i nazwisko, ani żadne inne\n"
+"        informacje, które mogłyby umożliwić połączenie Twojego zachowania w tym"
+"eksperymencie z Twoją prawdziwą tożsamością.\n"
+"    "
 #: .\presurvey\templates\presurvey\cPanas.html:6
 msgid "How do you feel at <b>this moment</b>?"
-msgstr ""
+msgstr "Jak się czujesz <b>w tym momencie</b>?"
 
 #: .\presurvey\templates\presurvey\dHypoEx1.html:6
 msgid "Hypothetical exercise"
-msgstr ""
+msgstr "Ćwiczenie hipotetyczne"
 
 #: .\presurvey\templates\presurvey\dHypoEx1.html:10
 #, python-format
@@ -458,7 +589,37 @@ msgid ""
 "\".\n"
 "    "
 msgstr ""
-
+"\n"
+"        Przyjmijmy, że uczelnia przekazała każdemu studentowi   "
+"Uniwersytetu Ekonomicznego w Poznaniu 15 zł.\n"
+"        Pieniądze te są przeznaczone na poprawę warunków studiowania na tej  "
+"uczelni. \n"
+"        Można je wydać na następujące opcje:<br>\n"
+"    <br>\n"
+"    (I)     Seria prezentacji znanych przedsiębiorców, wśród   "
+"nich Marek Zmysłowski,\n"
+"            urodzony w Polsce przedsiębiorca i współzałożyciel Rocket Internet, RTB House, OLX i GLOVO oraz autor  of\n"
+"            bestellera \"Goniąc czarne jednorożce.\"<br><br>\n"
+"    (II)    Dostęp do kolekcji ważnych standardowych podręczników w formie e-booków "
+"dostępnych dla wszystkich\n"
+"            studentów po zalogowaniu do uniwersyteckiego WiFi. <br><br>\n"
+"    (III)   \tSzereg stypendiów (600-800 zł na studenta) na studia"
+"lub praktyki.\n"
+"            zagraniczne poza programami finansowanymi"
+"<br><br>\n"
+"    (IV)  \tFinansowe wybranych kół naukowych w celu wsparcia "
+"ich aktywności,\n"
+"            tj. konferencje i publikacje. <br><br>\n"
+"\n"
+"<br><b>Jak w Twojej ocenie te pieniądze powinny być dystrybuowane pomiędzy te opcje (w procentach?)</b><br>\n"
+"\n"
+"    <br>Proszę pamiętać, że pytanie jest czysto hipotetyczne. Nie ma "
+"żadnych realnych konsekwencji.<br>\n"
+"\n"
+"    <br> Proszę pamiętać, aby suma procentowa wszystkich opcji poniżej w sumie dawała 100.\n"
+"Musisz uzupełnić jedynie liczbę <b>BEZ</b> znaku procentów \"%%"
+"\".\n"
+"    "
 #: .\presurvey\templates\presurvey\fAttitudes.html:10
 msgid ""
 "\n"
@@ -475,14 +636,26 @@ msgid ""
 "        everyday life?</b>\n"
 "    "
 msgstr ""
-
+"\n"
+"        1.	Filozof Immanuel Kant (1724-1804) zaproponował znany"
+"imperatyw kategoryczny: An\n"
+"        Jednostka powinna  <i>“[…] postępować tylko według takiej zasady, którą może "
+"jednocześnie chcieć uczynić \n"
+"        prawem powszechnym.”</i> (Kant, 1907: 88),co oznacza, że"
+"jednostka powinna zachowywać się w określony sposób tylko jeśli \n"
+"        życzysz sobie, aby wszyscy inni zachowywali się również w ten sposób. <br>\n"
+"\n"
+"        <br><b>Co o tym sądzisz? W jakim stopniu należy kierować się tą wskazówką ? "
+"przy podejmowaniu decyzji \n"
+"        w życiu codziennym?</b>\n"
+"    "
 #: .\presurvey\templates\presurvey\fAttitudes.html:22
 msgid "Never follow it"
-msgstr ""
+msgstr "Stosuję ją we wszystkich decyzjach"
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:31
 msgid "Always follow it"
-msgstr ""
+msgstr "Stosuję ją we wszystkich decyzjach"
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:42
 msgid ""
@@ -490,67 +663,75 @@ msgid ""
 "        <b>How much do you trust in:</b>\n"
 "    "
 msgstr ""
-
+"\n"
+"        <b>W jakim stopniu ufasz:</b>\n"
+"    "
 #: .\presurvey\templates\presurvey\fAttitudes.html:49
 msgid "No Trust"
-msgstr ""
+msgstr "Brak zaufania"
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:50
 msgid "Little Trust"
-msgstr ""
+msgstr "małe zaufanie"
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:51
 msgid "Much Trust"
-msgstr ""
+msgstr "Duże zaufanie "
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:52
 msgid "Very Much Trust"
-msgstr ""
+msgstr "Bardzo duże zaufanie"
 
 #: .\votingGame\models.py:26
 msgid ""
 "A presentation by Marek Zmysłowski, Polish-born entrepreneur and co-founder "
 "of Rocket Internet, RTB House, OLX and GLOVO and author of the bestseller "
-"\"Chasing Black Unicorns."
+"\"Chasing Black Unicorns\"."
 msgstr ""
+"Seria prezentacji znanych przedsiębiorców, wśród nich polski przedsiębiorca "
+"Marek Zmysłowski,założyciel Rocket Internet, RTB House, OLX oraz GLOVO i "
+"autor bestsellera \"Goniąc czarne jednorożce\"."
 
 #: .\votingGame\models.py:27
 msgid ""
 "Access to a collection of important standard textbooks as ebooks accessible "
 "to all students when logged in to the university WiFi."
 msgstr ""
-
+"Dostęp do kolekcji ważnych standardowych podręczników w formie e-booków "
+"dostępnych dla wszystkich studentów po zalogowaniu do uniwersyteckiego WiFi."
 #: .\votingGame\models.py:28
 msgid ""
 "A number of scholarships (600-800 Zloty per student) for study abroad or "
 "internship abroad outside of funded programs (so-called free mover)."
 msgstr ""
-
+"Szereg stypendiów (600-800 zł. na studenta) "
+"na studia lub praktyki zagraniczne poza programami finansowanymi."
 #: .\votingGame\models.py:29
 msgid ""
 "Financial support of selected Study Circles to support their activities, "
 "among others publications and conferences."
 msgstr ""
-
+"Wsparcie finansowe wybranych kół naukowych w celu wsparcia ich działalności, m.in.  "
+"publikacji i konferencji. "
 #: .\votingGame\models.py:30
 msgid "White vote"
-msgstr ""
+msgstr "Vote Blanc"
 
 #: .\votingGame\pages.py:19 .\votingGame\pages.py:38 .\votingGame\pages.py:71
 msgid "Waiting for other players"
-msgstr ""
+msgstr "Oczekiwanie na pozostałych uczestników badania"
 
 #: .\votingGame\pages.py:20
 msgid "waiting for other players to get ready before splitting into groups..."
-msgstr ""
+msgstr "Oczekujemy, aż inni gracze się przygotują, przed podziałem uczestników na grupy..."
 
 #: .\votingGame\pages.py:39 .\votingGame\pages.py:72
 msgid "waiting for other players and calculate voting result..."
-msgstr ""
+msgstr "Oczekujemy na innych uczestników badania i obliczenie wyników głosowania..."
 
 #: .\votingGame\templates\votingGame\aIntro.html:6
 msgid "Introduction"
-msgstr ""
+msgstr "Wstęp"
 
 #: .\votingGame\templates\votingGame\aIntro.html:10
 msgid ""
@@ -587,7 +768,38 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-
+"\n"
+"        <b>Dla każdego uczestnika</b> dzisiejszego eksperymentu przeznaczone jest 10-15 "
+"zł z publicznych środków.\n"
+"        Te pieniądze są przeznaczone na poprawę warunków studiowania "
+"na Uniwersytecie Ekonomicznym w Poznaniu.\n"
+"        Budżet może być wydany na nastepujące opcje:<br><br>\n"
+"        <ul>\n"
+"            <li> Seria prezentacji znanych przedsiębiorców, wśród nich Marek Zmysłowski "
+"urodzony w Polsce przedsiębiorca i współzałożyciel  ,\n"
+"               Rocket Internet, RTB House, OLX i GLOVO oraz autor bestsellera "
+"\"Goniąc czarne jednorożce.\" </li><br>\n"
+"            <li> Dostęp do kolekcji ważnych standardowych   "
+"podręczników w formie e-booków\n"
+"                po zalogowaniu do uczelnianego WiFi.  </li><br>\n"
+"            <li> Szereg stypendiów (600-800 zł. na studenta) "
+"na studia lub praktyki zagraniczne \n"
+"                poza programami finansowanymi </li><br>\n"
+"            <li> Wsparcie finansowe wybranych kół naukowych w celu m.in. "
+"wsparcia ich działalności,\n"
+"                tj, konferencje i publikacje. </li><br>\n"
+"        </ul>\n"
+"        Pytanie brzmi następująco: <b> Na który z powyższych celów powinny być wydane 10-15 zł. przypadające na każdego studenta? "
+"on?</b><br><br>\n"
+"\n"
+"        Wszystkich uczestników dzisiejszych eksperymentów podzieliliśmy losowo na "
+"trzy grupy równej wielkości. <br>\n"
+"        <b> Proszę nie komunikować się ze sobą podczas odpowiadania "
+"na nadchodzące pytania.</b><br>\n"
+"        Jeśli masz problem, proszę podnieś rękę, aby prowadzący eksperyment mógł "
+"Tobie pomóc.<br>\n"
+"\n"
+"    "
 #: .\votingGame\templates\votingGame\cTreatmentVote.html:10
 msgid ""
 "\n"
@@ -613,11 +825,32 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-
+"\n"
+"    W Twojej grupie decyzja o tym, jak wydać 10-15 zł na studenta,  "
+"podejmowana jest w głosowaniu większościowym. <br><br>\n"
+"\n"
+"    Opcja, która otrzyma absolutną większość głosów zostaje wybrana i   "
+"10-15 zł należące do każdego członka grupy zostanie .\n"
+"    wydane na tę opcję. W przypadku braku większości, dwie opcje,  "
+"które otrzymają najwięcej głosów\n"
+"    przejdą do drugiej rundy wyborów. W przypadku remisu (małe prawdopodobieństwo),   "
+"jedna z dwóch opcji zostanie wybrana losowo.<br><br>\n"
+"\n"
+"    Note: <b>Uwaga: Decyzja ma teraz realne konsekwencje. </b> Decyzja "
+"podjęta w waszej grupie zostanie wykonana.\n"
+"    <b>Za każdego ucznia uczestniczącego w waszej grupie 10-15 zł na osobę "
+"zostanie wydane na opcję, \n"
+"    która otrzyma większość.</b><br>\n"
+"    Teraz proszę oddać swój głos. <br><br>\n"
+"\n"
+"    Na co w Twojej ocenie należy wydać te 10-15 zł przypadające na członka tej grupy?"
+"<br><br>\n"
+"\n"
+"    "
 #: .\votingGame\templates\votingGame\cVoteResult.html:6
 #: .\votingGame\templates\votingGame\cVoteResult2.html:6
 msgid "Vote Result"
-msgstr ""
+msgstr "Wynik głosowania"
 
 #: .\votingGame\templates\votingGame\cVoteResult.html:12
 #: .\votingGame\templates\votingGame\cVoteResult2.html:12
@@ -630,15 +863,21 @@ msgid ""
 "following option:\n"
 "            "
 msgstr ""
-
+"\n"
+"                Wasza grupa większością głosów osiągnęła następującą decyzję:"
+"<br>\n"
+"\n"
+"                Budżet 10-15 zł przypadające na każdego członka Twojej grupy  "
+"przeznacza się na następującą opcję:\n"
+"            "
 #: .\votingGame\templates\votingGame\cVoteResult.html:19
 #: .\votingGame\templates\votingGame\cVoteResult2.html:19
 msgid " There is a tie, therefore, we will be voting again. "
-msgstr ""
+msgstr "Jest remis, dlatego będziemy głosować ponownie."
 
 #: .\votingGame\templates\votingGame\dTreatmentCouncil.html:6
 msgid "Council Decision"
-msgstr ""
+msgstr "Decyzja Rady Studentów"
 
 #: .\votingGame\templates\votingGame\dTreatmentCouncil.html:10
 msgid ""
@@ -680,10 +919,46 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-
+"\n"
+"\n"
+"W przypadku 10-15 złotych na studenta w Waszej grupie, poprosiliśmy"
+"Parlament Studencki </b> na Waszej uczelni \n"
+"        (<i>Karolina Rutkowska</i> - Wiceprezes  "
+"Parlamentu Studenckiego, <i>Aleksandra Matusiak</i>\n"
+"        - Wiceprezes Parlamentu Studenckiego , and <i>Wiktoria "
+"Walkowiak</i>\n"
+"        - Prezes Parlamentu Studenckiego )\n"
+"        o podjęcie decyzji większością głosów, odnośnie celu, na który zostanie wydany budżet.\n"
+"        Oto przedstawione im opcje:<br><br>\n"
+"        <ul>\n"
+"            <li> Seria prezentacji znanych przedsiębiorców, wśród nich "
+"urodzony w Polsce przedsiębiorca i współzałożyciel Rocket Internet, RTB House, OLX i GLOVO ,\n"
+"                oraz autor bestellera "
+"\"Goniąc czarne jednorożce.\" </li><br>\n"
+"            <li> Dostęp do kolekcji ważnych standardowych podręczników w formie e-booków "
+"dostepnych dla wszystkich studentów\n"
+"                po zalogowaniu do uniwersyteckiego WiFi.  </li><br>\n"
+"            <li> Szereg stypendiów (600-800 zł. na stydenta) na "
+"studia lub praktyki zagraniczne  \n"
+"                poza programami finansowanymi. </li><br>\n"
+"            <li> Wsparcie finansowe wybranych kół naukowych "
+"w celu wsparcia ich działalności,  ,\n"
+"                m.in. publikacji i konferencji. </li><br>\n"
+"        </ul>\n"
+"        <br>Parlament studencki zdecydował następująco: <br>\n"
+"        Budżet 10-15 zł przypadające na każdego członka Twojej grupy przeznaczono  "
+" na następującą opcję:<br><br>\n"
+"\n"
+"        <b>Szereg stypendiów (600-800 zł. na stydenta) na "
+"studia lub praktyki zagraniczne\n"
+"            poza programami finansowanymi.</b>\n"
+"\n"
+"\n"
+"\n"
+"    "
 #: .\votingGame\templates\votingGame\dTreatmentPresident.html:6
 msgid "President Decision"
-msgstr ""
+msgstr "Przewodniczący Parlamentu Studenckiego"
 
 #: .\votingGame\templates\votingGame\dTreatmentPresident.html:10
 msgid ""
@@ -718,3 +993,33 @@ msgid ""
 "\n"
 "    "
 msgstr ""
+"\n"
+"Zapytaliśmy  <i>Wiktoria "
+"Walkowiak</i> <b>przewodniczącego</b> Parlamentu Studenckiego Uniwersytetu Ekonomicznego w Poznaniu, \n"
+"        o podjęcie decyzji dotyczącej celu wydatkowania budżetu 10-15 zł przypadającego na każdego uczestnika Twojej grupy.\n"
+"        Poniżej zaproponowane opcje:<br><br>\n"
+"        <ul>\n"
+"            <li> Seria prezentacji znanych przedsiębiorców, wśród nich "
+"urodzony w Polsce przedsiębiorca i współzałożyciel Rocket Internet, RTB House, OLX i GLOVO, "
+"                oraz autor bestellera"
+"\"Goniąc czarne jednorożce.\" </li><br>\n"
+"            <li> Dostęp do kolekcji ważnych standardowych podręczników w formie e-booków "
+"dostepnych dla wszystkich studentów\n"
+"                po zalogowaniu do uniwersyteckiego WiFi.  </li><br>\n"
+"            <li> Szereg stypendiów (600-800 zł. na stydenta) na "
+"studia lub praktyki zagraniczne \n"
+"                poza programami finansowanymi. </li><br>\n"
+"            <li> Wsparcie finansowe wybranych kół naukowych "
+"w celu wsparcia ich działalności,\n"
+"                m.in. publikacji i konferencji. </li><br>\n"
+"        </ul>\n"
+"        <br>Przewodnicząca Parlamentu <i>Wiktoria Walkowiak</i> zdecydowała następująco<br>\n"
+"        For every member of your group, 10-15 Zloty are spent on the Budżet 10-15 zł. przypadający na każdego członka Twojej grupy przeznaczone zostanie na "
+"następującą opcję:<br><br>\n"
+"\n"
+"        <b>Szereg stypendiów (600-800 zł. na stydenta) na "
+"studia lub praktyki zagraniczne"
+"            poza programami finansowanymi.</b>\n"
+"\n"
+"\n"
+"    "
