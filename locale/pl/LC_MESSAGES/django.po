@@ -49,7 +49,7 @@ msgid ""
 "2 correct predictions - your contribution is 13 Zloty , you earn extra 2 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"2 poprawne przewidywania - Twój wkład to 13 zł., you earn extra 2 "
+"2 poprawne przewidywania - Twój wkład to 13 zł., zarabiasza dodatkowo 2 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:59
@@ -57,7 +57,7 @@ msgid ""
 "3 correct predictions - your contribution is 12 Zloty , you earn extra 3 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"3 poprawne przewidywania - Twój wkład to 12 zł., you earn extra 3 "
+"3 poprawne przewidywania - Twój wkład to 12 zł., zarabiasza dodatkowo 3 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:60
@@ -65,7 +65,7 @@ msgid ""
 "4 correct predictions - your contribution is 11 Zloty , you earn extra 4 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"4 poprawne przewidywania - Twój wkład to 11 zł., you earn extra 4 "
+"4 poprawne przewidywania - Twój wkład to 11 zł., zarabiasza dodatkowo 4 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:61
@@ -73,7 +73,7 @@ msgid ""
 "5 correct predictions - your contribution is 10 Zloty , you earn extra 5 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"5 poprawnych przewidywań - Twój wkład to 10 zł., you earn extra 5 "
+"5 poprawnych przewidywań - Twój wkład to 10 zł., zarabiasza dodatkowo 5 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\templates\mindgame\a0TestCoin.html:82
