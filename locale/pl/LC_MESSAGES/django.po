@@ -30,18 +30,18 @@ msgstr "Nie"
 
 #: .\mindgame\models.py:56
 msgid ""
-"0 correct predictions - your contribution is 15 Zloty, you earn extra 0 zl "
-"zł. ( + your show-up fee)"
+"0 correct predictions - your contribution is 15 Zloty, you earn extra 0 "
+"Zloty ( + your show-up fee)"
 msgstr ""
-"0 poprawnych przewidywań - Twój wkład to 15 zł., zarabiasz dodatkowo 0 zł. "
+"0 poprawnych przewidywań - Twój wkład to 15 zł., zarabiasz dodatkowo 0 "
 "zł. ( + Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:57
 msgid ""
-"1 correct predictions - your contribution is 14 Zloty , you earn extra 1 zl"
+"1 correct predictions - your contribution is 14 Zloty , you earn extra 1 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"1 poprawne przewidywanie - Twój wkład to 14 zł., zarabiasza dodatkowo 1 zł."
+"1 poprawne przewidywanie - Twój wkład to 14 zł., zarabiasza dodatkowo 1 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:58
@@ -49,7 +49,7 @@ msgid ""
 "2 correct predictions - your contribution is 13 Zloty , you earn extra 2 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"2 poprawne przewidywania - Twój wkład to 13 zł., you earn extra 2 zł. "
+"2 poprawne przewidywania - Twój wkład to 13 zł., you earn extra 2 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:59
@@ -57,7 +57,7 @@ msgid ""
 "3 correct predictions - your contribution is 12 Zloty , you earn extra 3 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"3 poprawne przewidywania - Twój wkład to 12 zł., you earn extra 3 zł. "
+"3 poprawne przewidywania - Twój wkład to 12 zł., you earn extra 3 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:60
@@ -65,7 +65,7 @@ msgid ""
 "4 correct predictions - your contribution is 11 Zloty , you earn extra 4 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"4 poprawne przewidywania - Twój wkład to 11 zł., you earn extra 4 zł. "
+"4 poprawne przewidywania - Twój wkład to 11 zł., you earn extra 4 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\models.py:61
@@ -73,7 +73,7 @@ msgid ""
 "5 correct predictions - your contribution is 10 Zloty , you earn extra 5 "
 "Zloty (+ your show-up fee)"
 msgstr ""
-"5 poprawnych przewidywań - Twój wkład to 10 zł., you earn extra 5 zł. "
+"5 poprawnych przewidywań - Twój wkład to 10 zł., you earn extra 5 "
 "zł. (+ Twoja opłata za uczestnictwo)"
 
 #: .\mindgame\templates\mindgame\a0TestCoin.html:82
