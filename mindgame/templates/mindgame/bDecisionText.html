@@ -121,14 +121,20 @@
         flipBtn.addEventListener("click", () => {
             let i = Math.floor(Math.random() * 2);
             if(i){
-                coinText.innerText = "głowa";
+                coinText.innerText = "...";
+                setTimeout(function(){
+                    coinText.innerText = "orzeł";
+                },3000);
                 heads++;
                 clickNum++;
                 clickSeq = clickSeq.concat(clickNum,"1,");
                 document.getElementById('subjectClickSeq').value = clickSeq;
             }
             else{
-                coinText.innerText = "ogon";
+                coinText.innerText = "...";
+                setTimeout(function(){
+                    coinText.innerText = "reszka";
+                },3000);
                 tails++;
                 clickNum++;
                 clickSeq = clickSeq.concat(clickNum,"0,");
