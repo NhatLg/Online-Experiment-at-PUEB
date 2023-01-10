@@ -194,7 +194,7 @@ msgstr ""
 "            i zapamietaj. Możesz wykonać jedynie jedno z dwóch możliwych "         
 "przewidywań:<br>\n"
 "            “Przewiduje: ORZEŁ”<br>\n"
-"            Or<br>\n"
+"            Lub<br>\n"
 "            “Przewiduję: RESZKA”<br>\n"
 "        </p>\n"
 "\n"
@@ -651,7 +651,7 @@ msgstr ""
 "    "
 #: .\presurvey\templates\presurvey\fAttitudes.html:22
 msgid "Never follow it"
-msgstr "Stosuję ją we wszystkich decyzjach"
+msgstr "Nigdy nie stosuję"
 
 #: .\presurvey\templates\presurvey\fAttitudes.html:31
 msgid "Always follow it"
