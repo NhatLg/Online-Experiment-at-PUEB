@@ -23,10 +23,10 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
     translated_languages = ('en', 'pl')
-    voteOptions = [  (0, _('A presentation by Marek Zmysłowski, Polish-born entrepreneur and co-founder of Rocket Internet, RTB House, OLX and GLOVO and author of the bestseller "Chasing Black Unicorns".')),
-                     (1, _('Access to a collection of important standard textbooks as ebooks accessible to all students when logged in to the university WiFi.')),
-                     (2, _('A number of scholarships (600-800 Zloty per student) for study abroad or internship abroad outside of funded programs (so-called free mover).')),
-                     (3, _('Financial support of selected Study Circles to support their activities, among others publications and conferences.')),
+    voteOptions = [  (0, _('A presentation by Marek Zmysłowski, Polish-born entrepreneur and co-founder of Rocket Internet, RTB House, OLX and GLOVO.')),
+                     (1, _('Online access to important standard textbooks via university WiFi.')),
+                     (2, _('Scholarships (600-800 Zloty per student) for study or internship abroad outside of funded programs.')),
+                     (3, _('Financial support of selected Study Circles (e.g. for publications or conferences).')),
                      (99, _('White vote')),
                     ]
 
