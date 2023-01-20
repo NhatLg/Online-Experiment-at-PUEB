@@ -34,13 +34,13 @@ class Subsession(BaseSubsession):
     def do_my_shuffle(self):
         all_players = self.get_players()
         random.shuffle(all_players)
-        group_matrix = [all_players[i::3] for i in range(3)]
+        group_matrix = [all_players[i::2] for i in range(2)]
 
         self.set_group_matrix(group_matrix)
         for p in all_players:
             p.isVoteTreatment = 1 if p in self.get_group_matrix()[0] else 0
-            p.isCouncilTreatment = 1 if p in self.get_group_matrix()[1] else 0
-            p.isPresidentTreatment = 1 if p in self.get_group_matrix()[2] else 0
+            # p.isCouncilTreatment = 1 if p in self.get_group_matrix()[1] else 0
+            p.isPresidentTreatment = 1 if p in self.get_group_matrix()[1] else 0
 
 
 class Group(BaseGroup):

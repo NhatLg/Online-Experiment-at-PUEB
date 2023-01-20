@@ -43,5 +43,28 @@ You only need to fill in the number <b>without</b> the percentage sign "%".
             document.activeElement.blur();
         }
         });
+
+        document.querySelector('#id_disI').addEventListener('change', autoFillLast);
+        document.querySelector('#id_disII').addEventListener('change', autoFillLast);
+        document.querySelector('#id_disIII').addEventListener('change', autoFillLast);
+        document.querySelector('#id_disIV').addEventListener('change', autoFillLast);
+
+        function autoFillLast(){
+            let valueForm1 = document.querySelector('#id_disI').value;
+            let valueForm2 = document.querySelector('#id_disII').value;
+            let valueForm3 = document.querySelector('#id_disIII').value;
+            let valueForm4 = document.querySelector('#id_disIV').value;
+
+            let filledCount = Number.isFinite(parseFloat(valueForm1)) + Number.isFinite(parseFloat(valueForm2)) +
+                Number.isFinite(parseFloat(valueForm3)) + Number.isFinite(parseFloat(valueForm4))
+
+            if (filledCount == 3) {
+                if (isNaN(parseFloat(valueForm1))) {document.querySelector('#id_disI').value = 100 - valueForm2 - valueForm3 - valueForm4};
+                if (isNaN(parseFloat(valueForm2))) {document.querySelector('#id_disII').value = 100 - valueForm1 - valueForm3 - valueForm4};
+                if (isNaN(parseFloat(valueForm3))) {document.querySelector('#id_disIII').value = 100 - valueForm2 - valueForm1 - valueForm4};
+                if (isNaN(parseFloat(valueForm4))) {document.querySelector('#id_disIV').value = 100 - valueForm2 - valueForm3 - valueForm1};
+            }
+        };
+
     </script>
 {% endblock %}

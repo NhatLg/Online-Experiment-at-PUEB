@@ -111,5 +111,5 @@ class Results(Page):
 page_sequence = [aIntro, bWaitPageShuffle, 
                  cTreatmentVote, cWaitPageTieCheck, cVoteResult,
                  cTreatmentVote2, cWaitPageTieCheck2, cVoteResult2,
-                 dTreatmentPresident, dTreatmentCouncil
+                 dTreatmentPresident, #dTreatmentCouncil
                 ]
