@@ -42,7 +42,7 @@ class dHypoEx1(TransMixin, Page):
 
 class ePersonalData(TransMixin, Page):
     form_model = 'player'
-    form_fields = ["subjectPhase", "subjectProgram", "subjectIsVote",
+    form_fields = ["subjectPhase", "subjectIsVote",
                    "subjectGender", "subjectAge", "subjectNativeLang",
                    "subjectIsWorkToStudy"]
 
