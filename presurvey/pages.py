@@ -56,4 +56,4 @@ class WaitPage(TransMixin, WaitPage):
 
 
 
-page_sequence = [aWelcome, bIdRequest, cPanas, dHypoEx1, ePersonalData, fAttitudes]
+page_sequence = [aWelcome, cPanas, dHypoEx1, ePersonalData, fAttitudes]
