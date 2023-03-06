@@ -10,7 +10,7 @@
     {% blocktrans %}
         The philosopher Immanuel Kant (1724-1804) proposed the well-known Categorical Imperative: An
         individual shall <i>“[…] act only on that maxim through which you can at the same time will that it
-        should become a universal law.”</i> (Kant, 1907: 88), meaning that you should act a certain way only if
+        should become a universal law.”</i> (Tatarkiewicz, Historia filozofii), meaning that you should act a certain way only if
         you’re willing to have everyone else act the same way too. <br>
 
         <br><b>What do you think. To what degree should people follow this guideline when making decisions in their
@@ -54,12 +54,6 @@
             <tr>
                 <td>{{ form.subjectAttiTrustOther.label }}</td>
                 {% for choice in form.subjectAttiTrustOther %}
-                    <td style="text-align: center;">{{ choice }}</td>
-                {% endfor %}
-            </tr>
-            <tr>
-                <td>{{ form.subjectAttiTrustAdmin.label }}</td>
-                {% for choice in form.subjectAttiTrustAdmin %}
                     <td style="text-align: center;">{{ choice }}</td>
                 {% endfor %}
             </tr>

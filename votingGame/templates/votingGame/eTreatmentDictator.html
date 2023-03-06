@@ -1,0 +1,31 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load otree  i18n %}
+
+{% block title %}
+    {% trans "Student Decision" %}
+{% endblock %}
+
+{% block content %}
+    {% blocktrans %}
+
+        In your group each member is asked to propose how to spent the 10-15 Zloty per student.<br><br>
+
+        One member from your group will be selected randomly. The 10-15 Zloty of every group member is spent
+        on the option proposed by this randomly selected member.
+        The proposals of all other group members will be ignored. <br><br>
+
+        Note: <b>The decision now has real-life consequences</b>.
+        The decision reached in your group will be executed. <b>For every student participating in your group,
+        10-15 Zloty per person will be spent on the proposal made by a randomly selected member in your group.</b><br><br>
+
+        Now please make your proposal: <br>
+        What should the 10-15 Zloty per member of your group be spent on?<br><br>
+
+    {% endblocktrans %}
+    {% formfields %}
+    <br>
+
+    {% next_button %}
+
+{% endblock %}

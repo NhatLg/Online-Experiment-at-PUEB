@@ -106,8 +106,8 @@ class Player(BasePlayer):
                                           widget=widgets.RadioSelectHorizontal)
     subjectAttiTrustOther = models.IntegerField(choices=[1, 2, 3, 4], label=_("Other people"), 
                                                 widget=widgets.RadioSelectHorizontal)
-    subjectAttiTrustAdmin = models.IntegerField(choices=[1, 2, 3, 4], label=_("University council"), 
-                                                widget=widgets.RadioSelectHorizontal)
+    # subjectAttiTrustAdmin = models.IntegerField(choices=[1, 2, 3, 4], label=_("University council"), 
+    #                                             widget=widgets.RadioSelectHorizontal)
     subjectAttiTrustCouncil = models.IntegerField(choices=[1, 2, 3, 4], label=_("Student council"), 
                                                   widget=widgets.RadioSelectHorizontal)
     

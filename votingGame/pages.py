@@ -96,20 +96,44 @@ class dTreatmentPresident(TransMixin, Page):
     def before_next_page(self):
         self.participant.vars["vote_str_result"] =  Constants.voteOptions[3 - 1][1]
 
-class dTreatmentCouncil(TransMixin, Page):
+class eTreatmentDictator(TransMixin, Page):
+    form_model='player'
+    form_fields=['treatment_dictator']
+    timeout_seconds = 90
+    
+    def is_displayed(self):
+        return self.player.isDictatorTreatment
+    
+    def before_next_page(self):
+        if self.timeout_happened:
+            self.player.treatment_dictator = 99
+            self.player.isLetTimeOutDic = True
+
+class eWaitPageDictator(TransMixin, WaitPage):
+    after_all_players_arrive = 'select_dictator_result'
+    title_text = _("Waiting for other players")
+    body_text = _("waiting for other players before randomly selecting a proposal...")
 
     def is_displayed(self):
-        return self.player.isCouncilTreatment
+        return self.player.isDictatorTreatment
+    
+class eTreatmentDictatorResult(TransMixin, Page):
+
+    def vars_for_template(self):
+        return dict(
+            vote_final_result=self.group.proposalResult,
+            vote_final_result_label = Constants.voteOptions[self.group.proposalResult - 1][1]
+        )
 
     def before_next_page(self):
-        self.participant.vars["vote_str_result"] =  Constants.voteOptions[3 - 1][1]
-
-class Results(Page):
-    pass
-
+        self.participant.vars["vote_str_result"] =  Constants.voteOptions[self.group.proposalResult - 1][1]
+        
+    def is_displayed(self):
+        return self.player.isDictatorTreatment
 
 page_sequence = [aIntro, bWaitPageShuffle, 
                  cTreatmentVote, cWaitPageTieCheck, cVoteResult,
                  cTreatmentVote2, cWaitPageTieCheck2, cVoteResult2,
-                 dTreatmentPresident, #dTreatmentCouncil
+                 dTreatmentPresident,
+                 eTreatmentDictator, eWaitPageDictator, eTreatmentDictatorResult,
                 ]

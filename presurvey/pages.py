@@ -48,7 +48,7 @@ class ePersonalData(TransMixin, Page):
 
 class fAttitudes(TransMixin, Page):
     form_model = 'player'
-    form_fields = ["subjectAttiKant", "subjectAttiTrustOther", "subjectAttiTrustAdmin", "subjectAttiTrustCouncil"]
+    form_fields = ["subjectAttiKant", "subjectAttiTrustOther", "subjectAttiTrustCouncil"]
 
 
 class WaitPage(TransMixin, WaitPage):

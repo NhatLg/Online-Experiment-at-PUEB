@@ -8,16 +8,21 @@
 
 {% block content %}
 
-        {% if vote_final_result %}
-            {% blocktrans %}
-                Your group reached the following decision by majority voting.<br>
+    {% if vote_final_result %}
+        {% blocktrans %}
+            Your group reached the following decision by majority voting.<br>
 
-                For every member of your group, 10-15 Zloty are spent on the following option:
-            {% endblocktrans %}
-                <b>{{ vote_final_result_label }}</b>
-        {% else %}
-            {% blocktrans %} There is a tie, therefore, we will be voting again. {% endblocktrans %}
-        {% endif %}
+            For every member of your group, 10-15 Zloty are spent on the following option:
+        {% endblocktrans %}
+            <b>{{ vote_final_result_label }}</b><br><br>
+
+        {% blocktrans %}
+            <b>Note: The decision now has real-life consequences. </b><br>
+            <b>For every student participating in your group, 10-15 Zloty per person will be spent on the option named above. </b>
+        {% endblocktrans %}
+    {% else %}
+        {% blocktrans %} There is a tie, therefore, we will be voting again. {% endblocktrans %}
+    {% endif %}
 
 
     <br><br>

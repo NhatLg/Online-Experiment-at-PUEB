@@ -23,10 +23,10 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
     translated_languages = ('en', 'pl')
-    voteOptions = [  (0, _('A presentation by Marek Zmysłowski, Polish-born entrepreneur and co-founder of Rocket Internet, RTB House, OLX and GLOVO.')),
-                     (1, _('Online access to important standard textbooks via university WiFi.')),
-                     (2, _('Scholarships (600-800 Zloty per student) for study or internship abroad outside of funded programs.')),
-                     (3, _('Financial support of selected Study Circles (e.g. for publications or conferences).')),
+    voteOptions = [  (0, _("Additional funds for the annual competition for the best master's or bachelor's thesis")),
+                     (1, _('Scholarships (800-1000 Zloty per student) for study or internships abroad')),
+                     (2, _('Online Access to important standard textbooks via university WiFi')),
+                     (3, _('Financial support for selected Study Circles ')),
                      (99, _('White vote')),
                     ]
 
@@ -34,19 +34,20 @@ class Subsession(BaseSubsession):
     def do_my_shuffle(self):
         all_players = self.get_players()
         random.shuffle(all_players)
-        group_matrix = [all_players[i::2] for i in range(2)]
+        group_matrix = [all_players[i::3] for i in range(3)]
 
         self.set_group_matrix(group_matrix)
         for p in all_players:
             p.isVoteTreatment = 1 if p in self.get_group_matrix()[0] else 0
-            # p.isCouncilTreatment = 1 if p in self.get_group_matrix()[1] else 0
-            p.isPresidentTreatment = 1 if p in self.get_group_matrix()[1] else 0
+            p.isDictatorTreatment = 1 if p in self.get_group_matrix()[1] else 0
+            p.isPresidentTreatment = 1 if p in self.get_group_matrix()[2] else 0
 
 
 class Group(BaseGroup):
     isTie = models.BooleanField()
     voteResult1 = models.IntegerField()
     voteResult2 = models.IntegerField()
+    proposalResult = models.IntegerField()
 
     def first_tie_check(self):
         players_vote_treatment = self.subsession.get_group_matrix()[0]
@@ -77,14 +78,26 @@ class Group(BaseGroup):
         else:
             self.voteResult2 = most_voted[0] + 1
 
+    def select_dictator_result(self):
+        players_dictator_treatment = self.subsession.get_group_matrix()[1]
+        while True:
+            selected_dictator = random.choice(players_dictator_treatment)
+            self.proposalResult = selected_dictator.treatment_dictator + 1
+            if self.proposalResult != 99:
+                break
+
+
 class Player(BasePlayer):
     treatment_vote = models.IntegerField(label=False,
                                          choices=Constants.voteOptions, initial=99)
 
     treatment_vote2 = models.IntegerField(label=False,
                                          choices=Constants.voteOptions, initial=99)
+    treatment_dictator = models.IntegerField(label=False,
+                                         choices=Constants.voteOptions, initial=99)
     isVoteTreatment = models.BooleanField()
-    isCouncilTreatment = models.BooleanField()
+    isDictatorTreatment = models.BooleanField()
     isPresidentTreatment = models.BooleanField()
     isLetTimeOut1 = models.BooleanField(initial=False)
     isLetTimeOut2 = models.BooleanField(initial=False)
+    isLetTimeOutDic = models.BooleanField(initial=False)

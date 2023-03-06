@@ -14,7 +14,13 @@
 
                 For every member of your group, 10-15 Zloty are spent on the following option:
             {% endblocktrans %}
-                <b>{{ vote_final_result_label }}</b>
+                <b>{{ vote_final_result_label }}</b><br>
+
+            {% blocktrans %}
+                <b>Note: The decision now has real-life consequences. </b><br>
+                <b>For every student participating in your group, 10-15 Zloty per person will be spent on the option named above. </b>
+            {% endblocktrans %}
+
         {% else %}
             {% blocktrans %} There is a tie, therefore, we will be voting again. {% endblocktrans %}
         {% endif %}

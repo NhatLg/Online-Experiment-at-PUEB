@@ -4,14 +4,14 @@ SESSION_CONFIGS = [
     {
         'name': 'presurvey_en',
         'display_name': "PUEB-English",
-        'num_demo_participants': 4,
+        'num_demo_participants': 7,
         'app_sequence': ['presurvey', 'votingGame', 'postsurvey', 'mindgame'],
         'language':'en'
     },
     {
         'name': 'presurvey_pl',
         'display_name': "PUEB-Polish",
-        'num_demo_participants': 4,
+        'num_demo_participants': 7,
         'app_sequence': ['presurvey', 'votingGame', 'postsurvey', 'mindgame'],
         'language': 'pl'
     },
