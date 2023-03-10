@@ -99,11 +99,11 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     treatment_vote = models.IntegerField(label=False,
-                                         choices=Constants.voteOptions, initial=99)
+                                         choices=Constants.voteOptions, initial=99, widget=widgets.RadioSelect)
     treatment_vote2 = models.IntegerField(label=False,
-                                         choices=Constants.voteOptions, initial=99)
+                                         choices=Constants.voteOptions, initial=99, widget=widgets.RadioSelect)
     tDictatorProposal = models.IntegerField(label=False,
-                                         choices=Constants.voteOptions, initial=99) 
+                                         choices=Constants.voteOptions, initial=99, widget=widgets.RadioSelect)
 
     treatment_dictator_id = models.IntegerField() #to record who is the dictator
     isVoteTreatment = models.BooleanField()
