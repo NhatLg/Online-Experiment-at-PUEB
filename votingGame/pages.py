@@ -106,7 +106,7 @@ class eTreatmentDictator(TransMixin, Page):
     
     def before_next_page(self):
         if self.timeout_happened:
-            self.player.treatment_dictator = 99
+            self.player.tDictatorProposal = 99
             self.player.isLetTimeOutDic = True
 
 class eWaitPageDictator(TransMixin, WaitPage):
