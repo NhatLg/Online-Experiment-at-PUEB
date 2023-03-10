@@ -45,9 +45,9 @@ class Subsession(BaseSubsession):
 
 class Group(BaseGroup):
     isTie = models.BooleanField()
-    voteResult1 = models.IntegerField()
-    voteResult2 = models.IntegerField()
-    proposalResult = models.IntegerField()
+    voteResult1 = models.IntegerField() # not off by 1
+    voteResult2 = models.IntegerField() # not off by 1
+    proposalResult = models.IntegerField() #to record the randomly selected dictator result (not off by 1)
 
     def first_tie_check(self):
         players_vote_treatment = self.subsession.get_group_matrix()[0]
@@ -55,6 +55,7 @@ class Group(BaseGroup):
         for p in players_vote_treatment:
             vote_result[p.treatment_vote] = vote_result.get(p.treatment_vote, 0) + 1
         vote_result.pop(99, None) #delete counts of white vote (which is coded as 99)
+        if not vote_result: raise Exception("Everyone vote blanc")
         max_value = max(vote_result.values())
         most_voted = [key for key, value in vote_result.items() if value == max_value]
         # record if there is a tie
@@ -70,6 +71,7 @@ class Group(BaseGroup):
         for p in players_vote_treatment:
             vote_result[p.treatment_vote2] = vote_result.get(p.treatment_vote2, 0) + 1
         vote_result.pop(99, None)  # delete counts of white vote (which is coded as 99)
+        if not vote_result: raise Exception("Everyone vote blanc")
         max_value = max(vote_result.values())
         most_voted = [key for key, value in vote_result.items() if value == max_value]
         # if tie, break the tie with random choice
@@ -80,21 +82,30 @@ class Group(BaseGroup):
 
     def select_dictator_result(self):
         players_dictator_treatment = self.subsession.get_group_matrix()[1]
-        while True:
-            selected_dictator = random.choice(players_dictator_treatment)
-            self.proposalResult = selected_dictator.treatment_dictator + 1
-            if self.proposalResult != 99:
-                break
+        dictator_candidates = []
+        for player in players_dictator_treatment:
+            proposalResult = player.tDictatorProposal + 1
+            if proposalResult != 100:
+                dictator_candidates.append(player)
+
+        if dictator_candidates:
+            dictator = random.choice(dictator_candidates)
+            self.proposalResult = dictator.tDictatorProposal + 1
+            for player in players_dictator_treatment:
+                player.treatment_dictator_id = dictator.id_in_group
+        else:
+            raise Exception("All players vote blanc")
 
 
 class Player(BasePlayer):
     treatment_vote = models.IntegerField(label=False,
                                          choices=Constants.voteOptions, initial=99)
-
     treatment_vote2 = models.IntegerField(label=False,
                                          choices=Constants.voteOptions, initial=99)
-    treatment_dictator = models.IntegerField(label=False,
-                                         choices=Constants.voteOptions, initial=99)
+    tDictatorProposal = models.IntegerField(label=False,
+                                         choices=Constants.voteOptions, initial=99) 
+
+    treatment_dictator_id = models.IntegerField() #to record who is the dictator
     isVoteTreatment = models.BooleanField()
     isDictatorTreatment = models.BooleanField()
     isPresidentTreatment = models.BooleanField()

@@ -94,11 +94,11 @@ class dTreatmentPresident(TransMixin, Page):
         return self.player.isPresidentTreatment
 
     def before_next_page(self):
-        self.participant.vars["vote_str_result"] =  Constants.voteOptions[3 - 1][1]
+        self.participant.vars["vote_str_result"] =  Constants.voteOptions[3 - 1][1] #voting result starts from 1 not 0
 
 class eTreatmentDictator(TransMixin, Page):
     form_model='player'
-    form_fields=['treatment_dictator']
+    form_fields=['tDictatorProposal']
     timeout_seconds = 90
     
     def is_displayed(self):
