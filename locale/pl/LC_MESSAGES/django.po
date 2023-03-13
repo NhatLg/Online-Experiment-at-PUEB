@@ -166,7 +166,7 @@ msgid ""
 msgstr ""
 "\n"
 "        <p>\n"
-"            Przed chwilą zostałęś poinformowany, że 10-15 zł. przypadające na każdego członka "
+"            Przed chwilą zostałeś poinformowany, że 10-15 zł. przypadające na każdego członka "
 "Twojej grupy zostanie przeznaczone na\n"
 "            następującą opcję:<br><br>\n"
 "            <b><i>%(last_vote_result)s</i></b><br><br>\n"
@@ -187,9 +187,9 @@ msgstr ""
 "swojej głowie\n"
 "            i zapamietaj. Możesz wykonać jedynie jedno z dwóch możliwych "
 "przewidywań:<br>\n"
-"            “Przewiduje: <b>ORZEŁ</b>”<br>\n"
+"            “<b>ORZEŁ</b>”<br>\n"
 "            Lub<br>\n"
-"            “Przewiduję: <b>RESZKA</b>”<br>\n"
+"            “<b>RESZKA</b>”<br>\n"
 "        </p>\n"
 "\n"
 "        <p>\n"
@@ -219,10 +219,13 @@ msgstr ""
 #: .\postsurvey\templates\postsurvey\bAcceptance.html:6
 #: .\presurvey\templates\presurvey\ePersonalData.html:6
 #: .\presurvey\templates\presurvey\fAttitudes.html:6
-#: .\votingGame\templates\votingGame\cTreatmentVote.html:6
-#: .\votingGame\templates\votingGame\cTreatmentVote2.html:6
 msgid "Please answer the following questions"
 msgstr "Odpowiedz na następujące pytanie"
+
+#: .\votingGame\templates\votingGame\cTreatmentVote.html:6
+#: .\votingGame\templates\votingGame\cTreatmentVote2.html:6
+msgid "Majority Voting"
+msgstr "Głosowanie demokratyczne"
 
 #: .\mindgame\templates\mindgame\bDecision.html:101
 #: .\mindgame\templates\mindgame\bDecisionText.html:95
@@ -248,7 +251,7 @@ msgstr ""
 "w zadaniu z rzutem monetą determinuje\n"
 "            twoją indywidualną korzyść finansową z eksperymentu i wysokość "
 "Twojego wkładu w finansowanie celu poniżej wskazanego: <br>\n"
-"            <i>%(last_vote_result)s</i>\n"
+"            <b><i>%(last_vote_result)s</i></b>\n"
 "        </p>\n"
 "    "
 
@@ -329,7 +332,7 @@ msgstr "Aktywny"
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:6
 msgid "How do you feel at <b>this moment</b> ?"
-msgstr "Jak się czujesz w <b>tym momencie</b>. Wskaż dla wszystkich.?"
+msgstr "Jak się czujesz w <b>tym momencie</b>? Wskaż dla wszystkich."
 
 #: .\postsurvey\templates\postsurvey\aPanas.html:14
 #: .\presurvey\templates\presurvey\cPanas.html:14
@@ -522,7 +525,7 @@ msgstr ""
 
 #: .\presurvey\templates\presurvey\cPanas.html:6
 msgid "How do you feel at <b>this moment</b>?"
-msgstr "Jak się czujesz <b>w tym momencie</b>. Wskaż dla wszystkich."
+msgstr "Jak się czujesz <b>w tym momencie</b>? Wskaż dla wszystkich."
 
 #: .\presurvey\templates\presurvey\dHypoEx1.html:6
 msgid "Hypothetical exercise"
@@ -885,7 +888,7 @@ msgstr ""
 
 #: .\votingGame\templates\votingGame\dTreatmentPresident.html:6
 msgid "Vice President Decision"
-msgstr "Wiceprzewodniczącego Parlamentu Studenckiego"
+msgstr "Decyzja Wiceprzewodniczącego Parlamentu Studenckiego"
 
 #: .\votingGame\templates\votingGame\dTreatmentPresident.html:10
 msgid ""
@@ -946,7 +949,7 @@ msgstr ""
 
 #: .\votingGame\templates\votingGame\eTreatmentDictator.html:6
 msgid "Student Decision"
-msgstr "Decyzja studentów"
+msgstr "Decyzja jednego członka grupy"
 
 #: .\votingGame\templates\votingGame\eTreatmentDictator.html:10
 msgid ""
