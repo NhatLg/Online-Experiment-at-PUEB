@@ -23,7 +23,8 @@ class cTreatmentVote(TransMixin, Page):
     form_model='player'
     form_fields=['treatment_vote']
     timeout_seconds = 90
-
+    timer_text = 'Pozostały czas na podjęcie decyzji'
+    
     def is_displayed(self):
         return self.player.isVoteTreatment
 
@@ -57,7 +58,7 @@ class cTreatmentVote2(TransMixin, Page):
     form_model='player'
     form_fields=['treatment_vote2']
     timeout_seconds = 90
-    
+    timer_text = 'Pozostały czas na podjęcie decyzji'
     def is_displayed(self):
         return (self.player.isVoteTreatment) and (self.group.isTie)
 
@@ -100,7 +101,7 @@ class eTreatmentDictator(TransMixin, Page):
     form_model='player'
     form_fields=['tDictatorProposal']
     timeout_seconds = 90
-    
+    timer_text = 'Pozostały czas na podjęcie decyzji'
     def is_displayed(self):
         return self.player.isDictatorTreatment
     
