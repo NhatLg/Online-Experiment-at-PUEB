@@ -43,6 +43,10 @@ You only need to fill in the number <b>without</b> the percentage sign "%".
             document.activeElement.blur();
         }
         });
+        document.querySelector('#id_disI').placeholder='%';
+        document.querySelector('#id_disII').placeholder='%';
+        document.querySelector('#id_disIII').placeholder='%';
+        document.querySelector('#id_disIV').placeholder='%';
 
         document.querySelector('#id_disI').addEventListener('change', autoFillLast);
         document.querySelector('#id_disII').addEventListener('change', autoFillLast);

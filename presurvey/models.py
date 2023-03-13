@@ -79,8 +79,8 @@ class Player(BasePlayer):
                                        choices=[
                                             (0, _('Bachelor')), 
                                             (1, _('Master')),
-                                            (2, _('PhD')),
-                                            (3, _('Others')),
+                                            # (2, _('PhD')),
+                                            (2, _('Others')),
                                         ])
     # subjectProgram = models.StringField(label=_('What is your study program'))
     subjectIsVote = models.BooleanField(label=_("Did you vote in the last election for the student council?"),
