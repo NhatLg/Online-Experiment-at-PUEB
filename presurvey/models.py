@@ -70,10 +70,10 @@ class Player(BasePlayer):
     # ppanas_q11 = models.IntegerField(choices=[1, 2, 3, 4, 5], label=_("Irritable"), widget=widgets.RadioSelect)    
     # ppanas_q18 = models.IntegerField(choices=[1, 2, 3, 4, 5], label=_("Jittery"), widget=widgets.RadioSelect)
 
-    disI = models.FloatField(label="I")
-    disII = models.FloatField(label="II")
-    disIII = models.FloatField(label="III")
-    disIV = models.FloatField(label="IV")
+    disI = models.FloatField(label="(I) magisterską lub licencjacką ")
+    disII = models.FloatField(label="(II) stypendia ")
+    disIII = models.FloatField(label="(III) e-booków ")
+    disIV = models.FloatField(label="(IV) kół naukowych ")
     
     subjectPhase = models.IntegerField(label=_('What phase of study are you currently in?'),
                                        choices=[
